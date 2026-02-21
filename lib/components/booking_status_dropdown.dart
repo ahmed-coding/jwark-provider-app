@@ -1,10 +1,10 @@
 import 'package:async/async.dart';
 import 'package:flutter/material.dart';
-import 'package:handyman_provider_flutter/models/booking_status_response.dart';
-import 'package:handyman_provider_flutter/networks/rest_apis.dart';
-import 'package:handyman_provider_flutter/utils/common.dart';
-import 'package:handyman_provider_flutter/utils/constant.dart';
-import 'package:handyman_provider_flutter/utils/extensions/string_extension.dart';
+import 'package:jwark_provider_flutter/models/booking_status_response.dart';
+import 'package:jwark_provider_flutter/networks/rest_apis.dart';
+import 'package:jwark_provider_flutter/utils/common.dart';
+import 'package:jwark_provider_flutter/utils/constant.dart';
+import 'package:jwark_provider_flutter/utils/extensions/string_extension.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 import '../main.dart';

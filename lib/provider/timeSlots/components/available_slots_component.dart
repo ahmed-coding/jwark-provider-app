@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:handyman_provider_flutter/main.dart';
-import 'package:handyman_provider_flutter/provider/timeSlots/components/slot_widget.dart';
-import 'package:handyman_provider_flutter/utils/configs.dart';
+import 'package:jwark_provider_flutter/main.dart';
+import 'package:jwark_provider_flutter/provider/timeSlots/components/slot_widget.dart';
+import 'package:jwark_provider_flutter/utils/configs.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 class AvailableSlotsComponent extends StatefulWidget {

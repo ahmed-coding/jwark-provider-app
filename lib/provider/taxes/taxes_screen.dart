@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:handyman_provider_flutter/components/back_widget.dart';
-import 'package:handyman_provider_flutter/main.dart';
-import 'package:handyman_provider_flutter/models/tax_list_response.dart';
-import 'package:handyman_provider_flutter/networks/rest_apis.dart';
-import 'package:handyman_provider_flutter/provider/taxes/shimmer/taxes_shimmer.dart';
-import 'package:handyman_provider_flutter/utils/common.dart';
-import 'package:handyman_provider_flutter/utils/extensions/num_extenstions.dart';
+import 'package:jwark_provider_flutter/components/back_widget.dart';
+import 'package:jwark_provider_flutter/main.dart';
+import 'package:jwark_provider_flutter/models/tax_list_response.dart';
+import 'package:jwark_provider_flutter/networks/rest_apis.dart';
+import 'package:jwark_provider_flutter/provider/taxes/shimmer/taxes_shimmer.dart';
+import 'package:jwark_provider_flutter/utils/common.dart';
+import 'package:jwark_provider_flutter/utils/extensions/num_extenstions.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 import '../../components/app_widgets.dart';

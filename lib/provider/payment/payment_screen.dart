@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:handyman_provider_flutter/components/app_widgets.dart';
-import 'package:handyman_provider_flutter/components/back_widget.dart';
-import 'package:handyman_provider_flutter/main.dart';
-import 'package:handyman_provider_flutter/models/provider_subscription_model.dart';
-import 'package:handyman_provider_flutter/utils/configs.dart';
-import 'package:handyman_provider_flutter/utils/constant.dart';
-import 'package:handyman_provider_flutter/utils/extensions/num_extenstions.dart';
+import 'package:jwark_provider_flutter/components/app_widgets.dart';
+import 'package:jwark_provider_flutter/components/back_widget.dart';
+import 'package:jwark_provider_flutter/main.dart';
+import 'package:jwark_provider_flutter/models/provider_subscription_model.dart';
+import 'package:jwark_provider_flutter/utils/configs.dart';
+import 'package:jwark_provider_flutter/utils/constant.dart';
+import 'package:jwark_provider_flutter/utils/extensions/num_extenstions.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 import '../../components/app_common_dialog.dart';

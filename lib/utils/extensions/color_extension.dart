@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:handyman_provider_flutter/screens/cash_management/cash_constant.dart';
-import 'package:handyman_provider_flutter/utils/colors.dart';
+import 'package:jwark_provider_flutter/screens/cash_management/cash_constant.dart';
+import 'package:jwark_provider_flutter/utils/colors.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 import '../constant.dart';

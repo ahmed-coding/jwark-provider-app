@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:handyman_provider_flutter/main.dart';
-import 'package:handyman_provider_flutter/utils/constant.dart';
+import 'package:jwark_provider_flutter/main.dart';
+import 'package:jwark_provider_flutter/utils/constant.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 class ViewAllLabel extends StatelessWidget {

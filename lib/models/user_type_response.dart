@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:handyman_provider_flutter/models/pagination_model.dart';
+import 'package:jwark_provider_flutter/models/pagination_model.dart';
 
 import 'multi_language_request_model.dart';
 

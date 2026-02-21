@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:handyman_provider_flutter/components/app_widgets.dart';
-import 'package:handyman_provider_flutter/components/price_widget.dart';
-import 'package:handyman_provider_flutter/main.dart';
-import 'package:handyman_provider_flutter/utils/common.dart';
-import 'package:handyman_provider_flutter/utils/constant.dart';
+import 'package:jwark_provider_flutter/components/app_widgets.dart';
+import 'package:jwark_provider_flutter/components/price_widget.dart';
+import 'package:jwark_provider_flutter/main.dart';
+import 'package:jwark_provider_flutter/utils/common.dart';
+import 'package:jwark_provider_flutter/utils/constant.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 class CashConfirmDialog extends StatefulWidget {

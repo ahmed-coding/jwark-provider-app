@@ -1,11 +1,11 @@
 import 'dart:convert';
 
-import 'package:handyman_provider_flutter/main.dart';
-import 'package:handyman_provider_flutter/models/attachment_model.dart';
-import 'package:handyman_provider_flutter/models/booking_list_response.dart';
-import 'package:handyman_provider_flutter/models/service_model.dart';
-import 'package:handyman_provider_flutter/models/tax_list_response.dart';
-import 'package:handyman_provider_flutter/models/user_data.dart';
+import 'package:jwark_provider_flutter/main.dart';
+import 'package:jwark_provider_flutter/models/attachment_model.dart';
+import 'package:jwark_provider_flutter/models/booking_list_response.dart';
+import 'package:jwark_provider_flutter/models/service_model.dart';
+import 'package:jwark_provider_flutter/models/tax_list_response.dart';
+import 'package:jwark_provider_flutter/models/user_data.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 import '../provider/jobRequest/models/post_job_data.dart';

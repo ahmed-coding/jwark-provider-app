@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:handyman_provider_flutter/components/shimmer_widget.dart';
-import 'package:handyman_provider_flutter/utils/configs.dart';
+import 'package:jwark_provider_flutter/components/shimmer_widget.dart';
+import 'package:jwark_provider_flutter/utils/configs.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 class ProviderPaymentShimmer extends StatelessWidget {

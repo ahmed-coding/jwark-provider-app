@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:handyman_provider_flutter/components/price_widget.dart';
-import 'package:handyman_provider_flutter/components/view_all_label_component.dart';
-import 'package:handyman_provider_flutter/main.dart';
-import 'package:handyman_provider_flutter/models/package_response.dart';
-import 'package:handyman_provider_flutter/models/booking_detail_response.dart';
-import 'package:handyman_provider_flutter/models/booking_list_response.dart';
-import 'package:handyman_provider_flutter/models/service_model.dart';
-import 'package:handyman_provider_flutter/utils/common.dart';
-import 'package:handyman_provider_flutter/utils/configs.dart';
-import 'package:handyman_provider_flutter/utils/constant.dart';
-import 'package:handyman_provider_flutter/utils/model_keys.dart';
+import 'package:jwark_provider_flutter/components/price_widget.dart';
+import 'package:jwark_provider_flutter/components/view_all_label_component.dart';
+import 'package:jwark_provider_flutter/main.dart';
+import 'package:jwark_provider_flutter/models/package_response.dart';
+import 'package:jwark_provider_flutter/models/booking_detail_response.dart';
+import 'package:jwark_provider_flutter/models/booking_list_response.dart';
+import 'package:jwark_provider_flutter/models/service_model.dart';
+import 'package:jwark_provider_flutter/utils/common.dart';
+import 'package:jwark_provider_flutter/utils/configs.dart';
+import 'package:jwark_provider_flutter/utils/constant.dart';
+import 'package:jwark_provider_flutter/utils/model_keys.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 import '../models/tax_list_response.dart';

@@ -1,4 +1,4 @@
-import 'package:handyman_provider_flutter/screens/cash_management/model/payment_history_model.dart';
+import 'package:jwark_provider_flutter/screens/cash_management/model/payment_history_model.dart';
 
 class CashHistoryModel {
   num? totalCashInHand;

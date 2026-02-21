@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:handyman_provider_flutter/main.dart';
-import 'package:handyman_provider_flutter/screens/cash_management/cash_constant.dart';
-import 'package:handyman_provider_flutter/utils/common.dart';
-import 'package:handyman_provider_flutter/utils/extensions/color_extension.dart';
+import 'package:jwark_provider_flutter/main.dart';
+import 'package:jwark_provider_flutter/screens/cash_management/cash_constant.dart';
+import 'package:jwark_provider_flutter/utils/common.dart';
+import 'package:jwark_provider_flutter/utils/extensions/color_extension.dart';
 
 class CashFilterModel {
   String? name;

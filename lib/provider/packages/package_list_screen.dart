@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:handyman_provider_flutter/components/app_widgets.dart';
-import 'package:handyman_provider_flutter/components/cached_image_widget.dart';
-import 'package:handyman_provider_flutter/components/price_widget.dart';
-import 'package:handyman_provider_flutter/main.dart';
-import 'package:handyman_provider_flutter/models/package_response.dart';
-import 'package:handyman_provider_flutter/networks/rest_apis.dart';
-import 'package:handyman_provider_flutter/provider/packages/add_package_screen.dart';
-import 'package:handyman_provider_flutter/provider/packages/package_detail_screen.dart';
-import 'package:handyman_provider_flutter/provider/packages/shimmer/package_list_shimmer.dart';
-import 'package:handyman_provider_flutter/utils/common.dart';
+import 'package:jwark_provider_flutter/components/app_widgets.dart';
+import 'package:jwark_provider_flutter/components/cached_image_widget.dart';
+import 'package:jwark_provider_flutter/components/price_widget.dart';
+import 'package:jwark_provider_flutter/main.dart';
+import 'package:jwark_provider_flutter/models/package_response.dart';
+import 'package:jwark_provider_flutter/networks/rest_apis.dart';
+import 'package:jwark_provider_flutter/provider/packages/add_package_screen.dart';
+import 'package:jwark_provider_flutter/provider/packages/package_detail_screen.dart';
+import 'package:jwark_provider_flutter/provider/packages/shimmer/package_list_shimmer.dart';
+import 'package:jwark_provider_flutter/utils/common.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 import '../../components/base_scaffold_widget.dart';

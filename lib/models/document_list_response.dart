@@ -1,4 +1,4 @@
-import 'package:handyman_provider_flutter/models/pagination_model.dart';
+import 'package:jwark_provider_flutter/models/pagination_model.dart';
 
 class DocumentListResponse {
   Pagination? pagination;

@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:handyman_provider_flutter/components/back_widget.dart';
-import 'package:handyman_provider_flutter/components/cached_image_widget.dart';
-import 'package:handyman_provider_flutter/components/gallery_component.dart';
-import 'package:handyman_provider_flutter/components/price_widget.dart';
-import 'package:handyman_provider_flutter/main.dart';
-import 'package:handyman_provider_flutter/models/service_detail_response.dart';
-import 'package:handyman_provider_flutter/networks/rest_apis.dart';
-import 'package:handyman_provider_flutter/provider/services/add_services.dart';
-import 'package:handyman_provider_flutter/screens/gallery_List_Screen.dart';
-import 'package:handyman_provider_flutter/utils/common.dart';
-import 'package:handyman_provider_flutter/utils/configs.dart';
-import 'package:handyman_provider_flutter/utils/images.dart';
+import 'package:jwark_provider_flutter/components/back_widget.dart';
+import 'package:jwark_provider_flutter/components/cached_image_widget.dart';
+import 'package:jwark_provider_flutter/components/gallery_component.dart';
+import 'package:jwark_provider_flutter/components/price_widget.dart';
+import 'package:jwark_provider_flutter/main.dart';
+import 'package:jwark_provider_flutter/models/service_detail_response.dart';
+import 'package:jwark_provider_flutter/networks/rest_apis.dart';
+import 'package:jwark_provider_flutter/provider/services/add_services.dart';
+import 'package:jwark_provider_flutter/screens/gallery_List_Screen.dart';
+import 'package:jwark_provider_flutter/utils/common.dart';
+import 'package:jwark_provider_flutter/utils/configs.dart';
+import 'package:jwark_provider_flutter/utils/images.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 class ServiceDetailHeaderComponent extends StatefulWidget {
