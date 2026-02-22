@@ -1,4 +1,4 @@
-package com.jwark.services
+package com.jwark.provider
 
 import io.flutter.embedding.android.FlutterFragmentActivity
 

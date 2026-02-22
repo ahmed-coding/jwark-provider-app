@@ -3,7 +3,7 @@ import 'package:nb_utils/nb_utils.dart';
 import '../main.dart';
 
 /// DO NOT CHANGE THIS PACKAGE NAME
-const APP_PACKAGE_NAME = "com.jwark.services";
+const APP_PACKAGE_NAME = "com.jwark.provider";
 
 //region Custom Headers
  class CustomHeader {
