@@ -7,12 +7,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:153477553643:android:dc384a440156e309ef4dae",
+        "mobilesdk_app_id": "1:153477553643:android:64ce92e478ce0198ef4dae",
         "android_client_info": {
-          "package_name": "com.jwark.services"
+          "package_name": "com.jwark.provider"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "153477553643-n532j03khdrs1gkq2ndcrom2hkvqkptg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCUF-S9ljdaSYzqr7mHHFyiKyZxHY-0Qgk"
@@ -20,7 +25,41 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153477553643-n532j03khdrs1gkq2ndcrom2hkvqkptg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153477553643:android:dc384a440156e309ef4dae",
+        "android_client_info": {
+          "package_name": "com.jwark.services"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "153477553643-n532j03khdrs1gkq2ndcrom2hkvqkptg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUF-S9ljdaSYzqr7mHHFyiKyZxHY-0Qgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153477553643-n532j03khdrs1gkq2ndcrom2hkvqkptg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
