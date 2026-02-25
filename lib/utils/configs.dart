@@ -7,8 +7,8 @@ const DEFAULT_LANGUAGE = 'en';
 const primaryColor = Color(0xFF5F60B9);
 
 /// Live Url
-const DOMAIN_URL = "http://192.168.0.177";
-// const DOMAIN_URL = "http://192.168.0.178";
+//const DOMAIN_URL = "http://192.168.0.177";
+const DOMAIN_URL = "http://192.168.0.178";
 
 const BASE_URL = "$DOMAIN_URL/api/";
 
