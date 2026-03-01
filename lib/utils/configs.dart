@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 const APP_NAME = 'Jwark Provider';
 const DEFAULT_LANGUAGE = 'en';
 
-const primaryColor = Color(0xFF5F60B9);
+const primaryColor = Color(0xFFA17537);
 
 /// Live Url
 //const DOMAIN_URL = "http://192.168.0.177";
