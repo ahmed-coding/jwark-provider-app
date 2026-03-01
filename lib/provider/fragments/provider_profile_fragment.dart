@@ -199,12 +199,12 @@ class ProviderProfileFragmentState extends State<ProviderProfileFragment> {
                 ],
               ),
             16.height,
-            if (getStringAsync(DASHBOARD_COMMISSION).validate().isNotEmpty) ...[
-              CommissionComponent(
-                commission: Commission.fromJson(jsonDecode(getStringAsync(DASHBOARD_COMMISSION))),
-              ),
-              16.height,
-            ],
+            // if (getStringAsync(DASHBOARD_COMMISSION).validate().isNotEmpty) ...[
+            //   CommissionComponent(
+            //     commission: Commission.fromJson(jsonDecode(getStringAsync(DASHBOARD_COMMISSION))),
+            //   ),
+              // 16.height,
+            // ],
             SettingSection(
               title: Text(languages.general, style: boldTextStyle(color: primaryColor)),
               headingDecoration: BoxDecoration(
@@ -214,36 +214,36 @@ class ProviderProfileFragmentState extends State<ProviderProfileFragment> {
               divider: Offstage(),
               items: [
                 16.height,
-                SettingItemWidget(
-                  decoration: BoxDecoration(color: context.cardColor),
-                  leading: ic_un_fill_wallet.iconImage(size: 16),
-                  title: languages.walletBalance,
-                  titleTextStyle: boldTextStyle(size: 12),
-                  padding: EdgeInsets.only(top: 16, left: 16, right: 16),
-                  onTap: () {
-                    if (appConfigurationStore.onlinePaymentStatus) {
-                      WalletHistoryScreen().launch(context);
-                    }
-                  },
-                  trailing: Text(
-                    appStore.userWalletAmount.toPriceFormat(),
-                    style: boldTextStyle(color: Colors.green),
-                  ),
-                ),
-                if (appStore.earningTypeSubscription)
-                  SettingItemWidget(
-                    decoration: BoxDecoration(color: context.cardColor),
-                    leading: Image.asset(services, height: 16, width: 16, color: appStore.isDarkMode ? white : appTextSecondaryColor),
-                    title: languages.lblSubscriptionHistory,
-                    titleTextStyle: boldTextStyle(size: 12),
-                    trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 16),
-                    padding: EdgeInsets.only(top: 20, left: 16, right: 16),
-                    onTap: () async {
-                      SubscriptionHistoryScreen().launch(context).then((value) {
-                        setState(() {});
-                      });
-                    },
-                  ),
+                // SettingItemWidget(
+                //   decoration: BoxDecoration(color: context.cardColor),
+                //   leading: ic_un_fill_wallet.iconImage(size: 16),
+                //   title: languages.walletBalance,
+                //   titleTextStyle: boldTextStyle(size: 12),
+                //   padding: EdgeInsets.only(top: 16, left: 16, right: 16),
+                //   onTap: () {
+                //     if (appConfigurationStore.onlinePaymentStatus) {
+                //       WalletHistoryScreen().launch(context);
+                //     }
+                //   },
+                //   trailing: Text(
+                //     appStore.userWalletAmount.toPriceFormat(),
+                //     style: boldTextStyle(color: Colors.green),
+                //   ),
+                // ),
+                // if (appStore.earningTypeSubscription)
+                //   SettingItemWidget(
+                //     decoration: BoxDecoration(color: context.cardColor),
+                //     leading: Image.asset(services, height: 16, width: 16, color: appStore.isDarkMode ? white : appTextSecondaryColor),
+                //     title: languages.lblSubscriptionHistory,
+                //     titleTextStyle: boldTextStyle(size: 12),
+                //     trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 16),
+                //     padding: EdgeInsets.only(top: 20, left: 16, right: 16),
+                //     onTap: () async {
+                //       SubscriptionHistoryScreen().launch(context).then((value) {
+                //         setState(() {});
+                //       });
+                //     },
+                //   ),
                 if (rolesAndPermissionStore.serviceList)
                   SettingItemWidget(
                     decoration: BoxDecoration(color: context.cardColor),
@@ -268,30 +268,30 @@ class ProviderProfileFragmentState extends State<ProviderProfileFragment> {
                       VerifyProviderScreen().launch(context);
                     },
                   ),
-                if (appStore.userType != USER_TYPE_HANDYMAN && rolesAndPermissionStore.blogList)
-                  SettingItemWidget(
-                    decoration: BoxDecoration(color: context.cardColor),
-                    leading: Image.asset(ic_blog, height: 16, width: 16, color: appStore.isDarkMode ? white : appTextSecondaryColor),
-                    title: languages.blogs,
-                    titleTextStyle: boldTextStyle(size: 12),
-                    trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 18),
-                    padding: EdgeInsets.only(top: 20, left: 16, right: 16),
-                    onTap: () {
-                      BlogListScreen().launch(context);
-                    },
-                  ),
-                if (rolesAndPermissionStore.handymanList)
-                  SettingItemWidget(
-                    decoration: BoxDecoration(color: context.cardColor),
-                    leading: Image.asset(handyman, height: 16, width: 16, color: appStore.isDarkMode ? white : appTextSecondaryColor),
-                    title: languages.lblAllHandyman,
-                    titleTextStyle: boldTextStyle(size: 12),
-                    trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 18),
-                    padding: EdgeInsets.only(top: 20, left: 16, right: 16),
-                    onTap: () {
-                      HandymanListScreen().launch(context);
-                    },
-                  ),
+                // if (appStore.userType != USER_TYPE_HANDYMAN && rolesAndPermissionStore.blogList)
+                //   SettingItemWidget(
+                //     decoration: BoxDecoration(color: context.cardColor),
+                //     leading: Image.asset(ic_blog, height: 16, width: 16, color: appStore.isDarkMode ? white : appTextSecondaryColor),
+                //     title: languages.blogs,
+                //     titleTextStyle: boldTextStyle(size: 12),
+                //     trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 18),
+                //     padding: EdgeInsets.only(top: 20, left: 16, right: 16),
+                //     onTap: () {
+                //       BlogListScreen().launch(context);
+                //     },
+                //   ),
+                // if (rolesAndPermissionStore.handymanList)
+                //   SettingItemWidget(
+                //     decoration: BoxDecoration(color: context.cardColor),
+                //     leading: Image.asset(handyman, height: 16, width: 16, color: appStore.isDarkMode ? white : appTextSecondaryColor),
+                //     title: languages.lblAllHandyman,
+                //     titleTextStyle: boldTextStyle(size: 12),
+                //     trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 18),
+                //     padding: EdgeInsets.only(top: 20, left: 16, right: 16),
+                //     onTap: () {
+                //       HandymanListScreen().launch(context);
+                //     },
+                //   ),
                 if (appStore.isLoggedIn && rolesAndPermissionStore.helpDeskList)
                   SettingItemWidget(
                     decoration: BoxDecoration(color: context.cardColor),
@@ -304,30 +304,30 @@ class ProviderProfileFragmentState extends State<ProviderProfileFragment> {
                       HelpDeskListScreen().launch(context);
                     },
                   ),
-                if (appStore.userType != USER_TYPE_HANDYMAN && rolesAndPermissionStore.handymanPayout)
-                  SettingItemWidget(
-                    decoration: BoxDecoration(color: context.cardColor),
-                    leading: Image.asset(ic_earning, height: 16, width: 16, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8)),
-                    title: languages.handymanEarningList,
-                    titleTextStyle: boldTextStyle(size: 12),
-                    trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 18),
-                    padding: EdgeInsets.only(top: 20, left: 16, right: 16),
-                    onTap: () {
-                      HandymanEarningListScreen().launch(context);
-                    },
-                  ),
-                if (rolesAndPermissionStore.handymanTypeList)
-                  SettingItemWidget(
-                    decoration: BoxDecoration(color: context.cardColor),
-                    leading: Image.asset(percent_line, height: 16, width: 16, color: appStore.isDarkMode ? white : appTextSecondaryColor),
-                    title: languages.handymanCommission,
-                    titleTextStyle: boldTextStyle(size: 12),
-                    trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 18),
-                    padding: EdgeInsets.only(top: 20, left: 16, right: 16),
-                    onTap: () {
-                      HandymanCommissionTypeListScreen().launch(context);
-                    },
-                  ),
+                // if (appStore.userType != USER_TYPE_HANDYMAN && rolesAndPermissionStore.handymanPayout)
+                //   SettingItemWidget(
+                //     decoration: BoxDecoration(color: context.cardColor),
+                //     leading: Image.asset(ic_earning, height: 16, width: 16, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8)),
+                //     title: languages.handymanEarningList,
+                //     titleTextStyle: boldTextStyle(size: 12),
+                //     trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 18),
+                //     padding: EdgeInsets.only(top: 20, left: 16, right: 16),
+                //     onTap: () {
+                //       HandymanEarningListScreen().launch(context);
+                //     },
+                //   ),
+                // if (rolesAndPermissionStore.handymanTypeList)
+                //   SettingItemWidget(
+                //     decoration: BoxDecoration(color: context.cardColor),
+                //     leading: Image.asset(percent_line, height: 16, width: 16, color: appStore.isDarkMode ? white : appTextSecondaryColor),
+                //     title: languages.handymanCommission,
+                //     titleTextStyle: boldTextStyle(size: 12),
+                //     trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 18),
+                //     padding: EdgeInsets.only(top: 20, left: 16, right: 16),
+                //     onTap: () {
+                //       HandymanCommissionTypeListScreen().launch(context);
+                //     },
+                  // ),
                 if (appConfigurationStore.servicePackageStatus && rolesAndPermissionStore.servicePackageList)
                   SettingItemWidget(
                     decoration: BoxDecoration(color: context.cardColor),
@@ -364,56 +364,56 @@ class ProviderProfileFragmentState extends State<ProviderProfileFragment> {
                       MyTimeSlotsScreen().launch(context);
                     },
                   ),
-                if (rolesAndPermissionStore.postJobList)
-                  SettingItemWidget(
-                    decoration: BoxDecoration(color: context.cardColor),
-                    leading: Image.asset(list, height: 16, width: 16, color: appStore.isDarkMode ? white : appTextSecondaryColor),
-                    title: languages.bidList,
-                    titleTextStyle: boldTextStyle(size: 12),
-                    trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 18),
-                    padding: EdgeInsets.only(top: 20, left: 16, right: 16),
-                    onTap: () {
-                      BidListScreen().launch(context);
-                    },
-                  ),
-                if (rolesAndPermissionStore.taxList)
-                  SettingItemWidget(
-                    decoration: BoxDecoration(color: context.cardColor),
-                    leading: Image.asset(ic_tax, height: 16, width: 14, color: appStore.isDarkMode ? white : appTextSecondaryColor),
-                    title: languages.lblTaxes,
-                    titleTextStyle: boldTextStyle(size: 12),
-                    trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 18),
-                    padding: EdgeInsets.only(top: 20, left: 16, right: 16),
-                    onTap: () {
-                      TaxesScreen().launch(context);
-                    },
-                  ),
-                if (appStore.earningTypeCommission)
-                  SettingItemWidget(
-                    decoration: BoxDecoration(color: context.cardColor),
-                    leading: Image.asset(ic_wallet_history, height: 16, width: 16, color: appStore.isDarkMode ? white : appTextSecondaryColor),
-                    title: languages.lblWalletHistory,
-                    titleTextStyle: boldTextStyle(size: 12),
-                    trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 18),
-                    padding: EdgeInsets.only(top: 20, left: 16, right: 16),
-                    onTap: () {
-                      WalletHistoryScreen().launch(context);
-                    },
-                  ),
-                if (rolesAndPermissionStore.bankList)
-                  SettingItemWidget(
-                    decoration: BoxDecoration(color: context.cardColor),
-                    leading: Image.asset(ic_card, height: 16, width: 16, color: appStore.isDarkMode ? white : appTextSecondaryColor),
-                    title: languages.lblBankDetails,
-                    titleTextStyle: boldTextStyle(size: 12),
-                    trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 18),
-                    highlightColor: Colors.transparent,
-                    splashColor: Colors.transparent,
-                    padding: EdgeInsets.only(right: 16, left: 16, top: 20),
-                    onTap: () {
-                      BankDetails().launch(context);
-                    },
-                  ),
+                // if (rolesAndPermissionStore.postJobList)
+                //   SettingItemWidget(
+                //     decoration: BoxDecoration(color: context.cardColor),
+                //     leading: Image.asset(list, height: 16, width: 16, color: appStore.isDarkMode ? white : appTextSecondaryColor),
+                //     title: languages.bidList,
+                //     titleTextStyle: boldTextStyle(size: 12),
+                //     trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 18),
+                //     padding: EdgeInsets.only(top: 20, left: 16, right: 16),
+                //     onTap: () {
+                //       BidListScreen().launch(context);
+                //     },
+                //   ),
+                // if (rolesAndPermissionStore.taxList)
+                //   SettingItemWidget(
+                //     decoration: BoxDecoration(color: context.cardColor),
+                //     leading: Image.asset(ic_tax, height: 16, width: 14, color: appStore.isDarkMode ? white : appTextSecondaryColor),
+                //     title: languages.lblTaxes,
+                //     titleTextStyle: boldTextStyle(size: 12),
+                //     trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 18),
+                //     padding: EdgeInsets.only(top: 20, left: 16, right: 16),
+                //     onTap: () {
+                //       TaxesScreen().launch(context);
+                //     },
+                //   ),
+                // if (appStore.earningTypeCommission)
+                //   SettingItemWidget(
+                //     decoration: BoxDecoration(color: context.cardColor),
+                //     leading: Image.asset(ic_wallet_history, height: 16, width: 16, color: appStore.isDarkMode ? white : appTextSecondaryColor),
+                //     title: languages.lblWalletHistory,
+                //     titleTextStyle: boldTextStyle(size: 12),
+                //     trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 18),
+                //     padding: EdgeInsets.only(top: 20, left: 16, right: 16),
+                //     onTap: () {
+                //       WalletHistoryScreen().launch(context);
+                //     },
+                //   ),
+                // if (rolesAndPermissionStore.bankList)
+                //   SettingItemWidget(
+                //     decoration: BoxDecoration(color: context.cardColor),
+                //     leading: Image.asset(ic_card, height: 16, width: 16, color: appStore.isDarkMode ? white : appTextSecondaryColor),
+                //     title: languages.lblBankDetails,
+                //     titleTextStyle: boldTextStyle(size: 12),
+                //     trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 18),
+                //     highlightColor: Colors.transparent,
+                //     splashColor: Colors.transparent,
+                //     padding: EdgeInsets.only(right: 16, left: 16, top: 20),
+                //     onTap: () {
+                //       BankDetails().launch(context);
+                //     },
+                //   ),
                 if (appStore.userType == USER_TYPE_PROVIDER && appConfigurationStore.isPromotionalBanner)
                   SettingItemWidget(
                     decoration: BoxDecoration(color: context.cardColor),
@@ -448,31 +448,31 @@ class ProviderProfileFragmentState extends State<ProviderProfileFragment> {
               items: [
                 8.height,
                 SwitchPushNotificationSubscriptionComponent(),
-                SettingItemWidget(
-                  decoration: BoxDecoration(
-                    color: context.cardColor,
-                    borderRadius: BorderRadiusDirectional.vertical(bottom: Radius.circular(16)),
-                  ),
-                  leading: Image.asset(
-                    ic_check_update,
-                    height: 14,
-                    width: 14,
-                    color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8),
-                  ),
-                  title: languages.lblOptionalUpdateNotify,
-                  titleTextStyle: boldTextStyle(size: 12),
-                  padding: EdgeInsets.only(bottom: 16, right: 16, left: 16, top: 20),
-                  trailing: Transform.scale(
-                    scale: 0.6,
-                    child: Switch.adaptive(
-                      value: getBoolAsync(UPDATE_NOTIFY, defaultValue: true),
-                      onChanged: (v) {
-                        setValue(UPDATE_NOTIFY, v);
-                        setState(() {});
-                      },
-                    ).withHeight(16),
-                  ),
-                ),
+                // SettingItemWidget(
+                //   decoration: BoxDecoration(
+                //     color: context.cardColor,
+                //     borderRadius: BorderRadiusDirectional.vertical(bottom: Radius.circular(16)),
+                //   ),
+                //   leading: Image.asset(
+                //     ic_check_update,
+                //     height: 14,
+                //     width: 14,
+                //     color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8),
+                //   ),
+                //   title: languages.lblOptionalUpdateNotify,
+                //   titleTextStyle: boldTextStyle(size: 12),
+                //   padding: EdgeInsets.only(bottom: 16, right: 16, left: 16, top: 20),
+                //   trailing: Transform.scale(
+                //     scale: 0.6,
+                //     child: Switch.adaptive(
+                //       value: getBoolAsync(UPDATE_NOTIFY, defaultValue: true),
+                //       onChanged: (v) {
+                //         setValue(UPDATE_NOTIFY, v);
+                //         setState(() {});
+                //       },
+                //     ).withHeight(16),
+                //   ),
+                // ),
               ],
             ).paddingSymmetric(horizontal: 16),
             16.height,

@@ -329,11 +329,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   DropdownMenuItem(
                     child: Text(languages.provider, style: primaryTextStyle()),
                     value: USER_TYPE_PROVIDER,
+
                   ),
-                  DropdownMenuItem(
-                    child: Text(languages.handyman, style: primaryTextStyle()),
-                    value: USER_TYPE_HANDYMAN,
-                  ),
+                  
+                  // DropdownMenuItem(
+                  //   child: Text(languages.handyman, style: primaryTextStyle()),
+                  //   value: USER_TYPE_HANDYMAN,
+                  // ),
                 ],
                 focusNode: userTypeFocus,
                 dropdownColor: context.cardColor,

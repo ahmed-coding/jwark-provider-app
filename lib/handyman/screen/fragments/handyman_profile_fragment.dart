@@ -90,49 +90,49 @@ class _HandymanProfileFragmentState extends State<HandymanProfileFragment> {
               return 1.seconds.delay;
             },
             children: [
-              if (appStore.isLoggedIn && isUserTypeHandyman)
-                Observer(
-                  builder: (context) {
-                    return AnimatedContainer(
-                      margin: EdgeInsets.all(16),
-                      decoration: boxDecorationWithRoundedCorners(
-                        backgroundColor: (appStore.handymanAvailability == 1 ? Colors.green : Colors.red).withValues(alpha: 0.1),
-                        borderRadius: BorderRadius.circular(defaultRadius),
-                      ),
-                      duration: 300.milliseconds,
-                      child: SettingItemWidget(
-                        padding: EdgeInsets.only(top: 8, bottom: 8, left: 16, right: 16),
-                        title: languages.lblAvailableStatus,
-                        subTitle: '${languages.lblYouAre} ${appStore.handymanAvailability == 1 ? ONLINE : OFFLINE}',
-                        subTitleTextColor: appStore.handymanAvailability == 1 ? Colors.green : Colors.red,
-                        trailing: Transform.scale(
-                          scale: 0.8,
-                          child: Switch.adaptive(
-                            value: appStore.handymanAvailability == 1 ? true : false,
-                            activeColor: Colors.green,
-                            onChanged: (v) {
-                              ifNotTester(context, () {
-                                isAvailable = v;
-                                setState(() {});
-                                appStore.setHandymanAvailability(isAvailable ? 1 : 0);
-                                Map request = {
-                                  "is_available": isAvailable ? 1 : 0,
-                                  "id": appStore.userId,
-                                };
-                                updateHandymanAvailabilityApi(request: request).then((value) {
-                                  toast(value.message);
-                                }).catchError((e) {
-                                  appStore.setHandymanAvailability(isAvailable ? 0 : 1);
-                                  toast(e.toString());
-                                });
-                              });
-                            },
-                          ),
-                        ),
-                      ),
-                    );
-                  },
-                ),
+              // if (appStore.isLoggedIn && isUserTypeHandyman)
+              //   Observer(
+              //     builder: (context) {
+              //       return AnimatedContainer(
+              //         margin: EdgeInsets.all(16),
+              //         decoration: boxDecorationWithRoundedCorners(
+              //           backgroundColor: (appStore.handymanAvailability == 1 ? Colors.green : Colors.red).withValues(alpha: 0.1),
+              //           borderRadius: BorderRadius.circular(defaultRadius),
+              //         ),
+              //         duration: 300.milliseconds,
+              //         child: SettingItemWidget(
+              //           padding: EdgeInsets.only(top: 8, bottom: 8, left: 16, right: 16),
+              //           title: languages.lblAvailableStatus,
+              //           subTitle: '${languages.lblYouAre} ${appStore.handymanAvailability == 1 ? ONLINE : OFFLINE}',
+              //           subTitleTextColor: appStore.handymanAvailability == 1 ? Colors.green : Colors.red,
+              //           trailing: Transform.scale(
+              //             scale: 0.8,
+              //             child: Switch.adaptive(
+              //               value: appStore.handymanAvailability == 1 ? true : false,
+              //               activeColor: Colors.green,
+              //               onChanged: (v) {
+              //                 ifNotTester(context, () {
+              //                   isAvailable = v;
+              //                   setState(() {});
+              //                   appStore.setHandymanAvailability(isAvailable ? 1 : 0);
+              //                   Map request = {
+              //                     "is_available": isAvailable ? 1 : 0,
+              //                     "id": appStore.userId,
+              //                   };
+              //                   updateHandymanAvailabilityApi(request: request).then((value) {
+              //                     toast(value.message);
+              //                   }).catchError((e) {
+              //                     appStore.setHandymanAvailability(isAvailable ? 0 : 1);
+              //                     toast(e.toString());
+              //                   });
+              //                 });
+              //               },
+              //             ),
+              //           ),
+              //         ),
+              //       );
+              //     },
+              //   ),
 
               Container(
                 padding: EdgeInsets.all(12),
