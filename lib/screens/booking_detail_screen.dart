@@ -1342,61 +1342,61 @@ class BookingDetailScreenState extends State<BookingDetailScreen> with WidgetsBi
                     ).paddingOnly(left: 16, right: 16),
 
                   /// About Handyman Card
-                  if (res.data!.handymanData!.isNotEmpty && appStore.userType != USER_TYPE_HANDYMAN)
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        if (res.data!.bookingDetail!.status != BookingStatusKeys.pending) 24.height,
+                  // if (res.data!.handymanData!.isNotEmpty && appStore.userType != USER_TYPE_HANDYMAN)
+                  //   Column(
+                  //     crossAxisAlignment: CrossAxisAlignment.start,
+                  //     children: [
+                  //       if (res.data!.bookingDetail!.status != BookingStatusKeys.pending) 24.height,
 
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween, // Space between items
-                          children: [
-                            Text(languages.lblAboutHandyman, style: boldTextStyle(size: LABEL_TEXT_SIZE)),
-                            Column(
-                              children: res.data!.handymanData!.map(
-                                (e) {
-                                  return Text(
-                                    languages.viewAll,
-                                    style: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.bold,
-                                      color: primaryColor, // Adjust color as needed
-                                    ),
-                                  ).visible(res.data!.bookingDetail!.canCustomerContact && e.id != appStore.userId).onTap(() {
-                                    {
-                                      HandymanInfoScreen(handymanId: e.id, service: res.data!.service).launch(context).then((value) => null);
-                                    }
-                                  });
-                                },
-                              ).toList(),
-                            ),
-                          ],
-                        ),
+                  //       Row(
+                  //         mainAxisAlignment: MainAxisAlignment.spaceBetween, // Space between items
+                  //         children: [
+                  //           Text(languages.lblAboutHandyman, style: boldTextStyle(size: LABEL_TEXT_SIZE)),
+                  //           Column(
+                  //             children: res.data!.handymanData!.map(
+                  //               (e) {
+                  //                 return Text(
+                  //                   languages.viewAll,
+                  //                   style: TextStyle(
+                  //                     fontSize: 14,
+                  //                     fontWeight: FontWeight.bold,
+                  //                     color: primaryColor, // Adjust color as needed
+                  //                   ),
+                  //                 ).visible(res.data!.bookingDetail!.canCustomerContact && e.id != appStore.userId).onTap(() {
+                  //                   {
+                  //                     HandymanInfoScreen(handymanId: e.id, service: res.data!.service).launch(context).then((value) => null);
+                  //                   }
+                  //                 });
+                  //               },
+                  //             ).toList(),
+                  //           ),
+                  //         ],
+                  //       ),
 
-                        16.height,
-                        Container(
-                          decoration: boxDecorationDefault(color: context.cardColor),
-                          padding: EdgeInsets.all(16),
-                          child: Column(
-                            children: res.data!.handymanData!.map(
-                              (e) {
-                                return BasicInfoComponent(
-                                  1,
-                                  handymanData: e,
-                                  service: res.data!.service,
-                                  bookingDetail: res.data!.bookingDetail!,
-                                  bookingInfo: res.data!,
-                                ).onTap(() {
-                                  if (res.data!.bookingDetail!.canCustomerContact && e.id != appStore.userId) {
-                                    HandymanInfoScreen(handymanId: e.id, service: res.data!.service).launch(context).then((value) => null);
-                                  }
-                                });
-                              },
-                            ).toList(),
-                          ),
-                        ),
-                      ],
-                    ).paddingOnly(left: 16, right: 16),
+                  //       16.height,
+                  //       Container(
+                  //         decoration: boxDecorationDefault(color: context.cardColor),
+                  //         padding: EdgeInsets.all(16),
+                  //         child: Column(
+                  //           children: res.data!.handymanData!.map(
+                  //             (e) {
+                  //               return BasicInfoComponent(
+                  //                 1,
+                  //                 handymanData: e,
+                  //                 service: res.data!.service,
+                  //                 bookingDetail: res.data!.bookingDetail!,
+                  //                 bookingInfo: res.data!,
+                  //               ).onTap(() {
+                  //                 if (res.data!.bookingDetail!.canCustomerContact && e.id != appStore.userId) {
+                  //                   HandymanInfoScreen(handymanId: e.id, service: res.data!.service).launch(context).then((value) => null);
+                  //                 }
+                  //               });
+                  //             },
+                  //           ).toList(),
+                  //         ),
+                  //       ),
+                  //     ],
+                  //   ).paddingOnly(left: 16, right: 16),
 
                   /// About Customer Card
                   Column(
