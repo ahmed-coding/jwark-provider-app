@@ -161,15 +161,37 @@ class BookingDetailScreenState extends State<BookingDetailScreen> with WidgetsBi
   }
 
   Future<void> assignBookingDialog(BuildContext context, int? bookingId, int? addressId) async {
-    AssignHandymanScreen(
-      bookingId: bookingId,
-      serviceAddressId: addressId,
-      onUpdate: () {
+    if (appStore.isLoading) return;
+
+    showConfirmDialogCustom(
+      context,
+      title: languages.lblAreYouSureYouWantToAssignToYourself,
+      primaryColor: context.primaryColor,
+      positiveText: languages.lblYes,
+      negativeText: languages.lblCancel,
+      onAccept: (c) async {
+        var request = {
+          CommonKeys.id: bookingId,
+          CommonKeys.handymanId: [appStore.userId.validate()],
+        };
+
         appStore.setLoading(true);
-        init(flag: true);
-        if (appStore.isLoading) appStore.setLoading(false);
+
+        await assignBooking(request).then((res) async {
+          appStore.setLoading(false);
+
+          appStore.setLoading(true);
+          init(flag: true);
+          if (appStore.isLoading) appStore.setLoading(false);
+
+          toast(res.message);
+        }).catchError((e) {
+          appStore.setLoading(false);
+
+          toast(e.toString());
+        });
       },
-    ).launch(context);
+    );
   }
 
   Future<void> updateBooking(BookingDetailResponse bookDetail, String updateReason, String updatedStatus) async {
