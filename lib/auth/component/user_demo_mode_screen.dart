@@ -13,7 +13,7 @@ class UserDemoModeScreen extends StatefulWidget {
 }
 
 class _UserDemoModeScreenState extends State<UserDemoModeScreen> {
-  List<String> demoLoginName = ["Demo Provider", "Demo Handyman", "Reset"];
+  List<String> demoLoginName = ["Demo Provider", "Reset"];
 
   int btnIndex = 0;
 
@@ -56,10 +56,10 @@ class _UserDemoModeScreenState extends State<UserDemoModeScreen> {
                         if (index == 0) {
                           widget.onChanged.call(DEFAULT_PROVIDER_EMAIL, DEFAULT_PASS);
                         }
+                        // if (index == 1) {
+                        //   widget.onChanged.call(DEFAULT_HANDYMAN_EMAIL, DEFAULT_PASS);
+                        // }
                         if (index == 1) {
-                          widget.onChanged.call(DEFAULT_HANDYMAN_EMAIL, DEFAULT_PASS);
-                        }
-                        if (index == 2) {
                           widget.onChanged.call('', '');
                         }
                       },
