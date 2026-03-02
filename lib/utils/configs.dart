@@ -22,7 +22,7 @@ const REFUND_POLICY_URL = '';
 const INQUIRY_SUPPORT_EMAIL = '';
 
 /// You can add help line number here for contact. It's demo number
-const HELP_LINE_NUMBER = '+15265897485';
+const HELP_LINE_NUMBER = '+967770948670';
 
 //Airtel Money Payments
 ///It Supports ["UGX", "NGN", "TZS", "KES", "RWF", "ZMW", "CFA", "XOF", "XAF", "CDF", "USD", "XAF", "SCR", "MGA", "MWK"]
@@ -39,7 +39,7 @@ const SADAD_API_URL = 'https://api-s.sadad.qa';
 const SADAD_PAY_URL = "https://d.sadad.qa";
 
 /// RAZORPAY PAYMENT DETAIL
-const RAZORPAY_CURRENCY_CODE = 'INR';
+const RAZORPAY_CURRENCY_CODE = 'YER';
 
 /// PAYPAL PAYMENT DETAIL
 const PAYPAL_CURRENCY_CODE = 'USD';
@@ -50,17 +50,17 @@ const STRIPE_CURRENCY_CODE = 'INR';
 
 Country defaultCountry() {
   return Country(
-    phoneCode: '91',
-    countryCode: 'IN',
+    phoneCode: '967',
+    countryCode: 'YE',
     e164Sc: 91,
     geographic: true,
     level: 1,
-    name: 'India',
-    example: '9123456789',
-    displayName: 'India (IN) [+91]',
-    displayNameNoCountryCode: 'India (IN)',
-    e164Key: '91-IN-0',
-    fullExampleWithPlusSign: '+919123456789',
+    name: 'Yemen',
+    example: '770948670',
+    displayName: 'Yemen (YE) [+967]',
+    displayNameNoCountryCode: 'Yemen (YE)',
+    e164Key: '967-YE-0',
+    fullExampleWithPlusSign: '+967770948670',
   );
 }
 
