@@ -2,7 +2,7 @@ import 'package:country_picker/country_picker.dart';
 import 'package:flutter/material.dart';
 
 const APP_NAME = 'Jwark Provider';
-const DEFAULT_LANGUAGE = 'en';
+const DEFAULT_LANGUAGE = 'ar';
 
 const primaryColor = Color(0xFFA17537);
 
