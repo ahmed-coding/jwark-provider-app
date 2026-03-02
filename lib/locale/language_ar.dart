@@ -2208,7 +2208,7 @@ class LanguageAr extends Languages {
   String get closedBy => 'مغلق بواسطة';
 
   @override
-  String get helpDesk => 'مكتب المساعدة';
+  String get helpDesk => 'الشكاوى والمساعدة';
 
   @override
   String get addNew => 'أضف جديد';
