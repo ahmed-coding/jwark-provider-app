@@ -477,7 +477,7 @@ class LanguageAr extends Languages {
   String get lblCloseAppMsg => "اضغط مرة أخرى مرة أخرى للخروج من التطبيق";
 
   @override
-  String get lblAddress => "عنوان";
+  String get lblAddress => "العنوان";
 
   @override
   String get lblType => "النوع";
@@ -583,10 +583,10 @@ class LanguageAr extends Languages {
   String get lblFAQs => "أسئلة وأجوبة";
 
   @override
-  String get lblGetDirection => "احصل على اتجاه";
+  String get lblGetDirection => " احصل على موقع العميل";
 
   @override
-  String get lblDeleteTitle => "سيتم حذف الحساب";
+  String get lblDeleteTitle => "سيتم تسجيل خروجك من الحساب";
 
   @override
   String get lblDeleteSubTitle => "هل ترغب بالخروج؟";
@@ -730,7 +730,7 @@ class LanguageAr extends Languages {
   String get lblPleaseEnterMobileNumber => "الرجاء إدخال رقم الهاتف المحمول";
 
   @override
-  String get lblDangerZone => "الغاء الحساب بشكل كامل";
+  String get lblDangerZone => "الغاء الحساب أو تسجيل الخروج";
 
   @override
   String get lblDeleteAccount => "حذف الحساب";
@@ -780,7 +780,8 @@ class LanguageAr extends Languages {
       'هل تريد تخصيص هذه الخدمة لـ $name؟';
 
   @override
-  String get lblAreYouSureYouWantToAssignToYourself => 'هل تريد أن تسند لنفسك؟';
+  String get lblAreYouSureYouWantToAssignToYourself =>
+      'هل  انت متاكد من قبول الطلب؟';
 
   @override
   String get lblAssignToMyself => "تعيين لنفسي";

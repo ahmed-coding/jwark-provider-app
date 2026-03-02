@@ -10,7 +10,7 @@ const primaryColor = Color(0xFFA17537);
 //const DOMAIN_URL = "http://192.168.0.177";
 // const DOMAIN_URL = "http://192.168.0.178";
 const DOMAIN_URL = "https://ghostwhite-leopard-823170.hostingersite.com";
-
+// const DOMAIN_URL = "http://192.168.1.254";
 const BASE_URL = "$DOMAIN_URL/api/";
 
 /// You can specify in Admin Panel, These will be used if you don't specify in Admin Panel
