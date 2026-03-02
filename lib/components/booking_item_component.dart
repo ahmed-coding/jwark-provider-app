@@ -335,60 +335,60 @@ class BookingItemComponentState extends State<BookingItemComponent> {
                   if (widget.bookingData.handyman.validate().isNotEmpty && isUserTypeProvider)
                     Column(
                       children: [
-                        DottedLine(
-                          dashColor: appStore.isDarkMode ? lightGray.withValues(alpha:0.4) : lightGray,
-                          dashGapLength: 5,
-                          dashLength: 8,
-                        ).paddingAll(8),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            ImageBorder(
-                              src: widget.bookingData.handyman!.isEmpty
-                                  ? widget.bookingData.providerImage.validate()
-                                  : widget.bookingData.isProviderAndHandymanSame
-                                      ? widget.bookingData.providerImage.validate()
-                                      : widget.bookingData.handyman!.first.handyman!.handymanImage.validate(),
-                              height: 40,
-                            ),
-                            16.width,
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
-                                  children: [
-                                    Marquee(
-                                      child: Text(
-                                        widget.bookingData.handyman.validate().first.handyman!.displayName.validate(),
-                                        style: boldTextStyle(size: 12),
-                                      ),
-                                    ).flexible(),
-                                    4.width,
-                                    ImageIcon(
-                                      AssetImage(ic_verified),
-                                      size: 14,
-                                      color: Colors.green,
-                                    ).visible(
-                                      widget.bookingData.handyman!.isEmpty
-                                          ? widget.bookingData.providerIsVerified.validate() == 1
-                                          : widget.bookingData.isProviderAndHandymanSame
-                                              ? widget.bookingData.providerIsVerified.validate() == 1
-                                              : widget.bookingData.handyman!.first.handyman!.isVerifiedHandyman.validate() == 1,
-                                    ),
-                                  ],
-                                ),
-                                4.height,
-                                Text(
-                                  languages.handyman,
-                                  style: secondaryTextStyle(),
-                                  maxLines: 1,
-                                  overflow: TextOverflow.ellipsis,
-                                ),
-                              ],
-                            ).flexible(),
-                          ],
-                        ).paddingAll(8),
+                        // DottedLine(
+                        //   dashColor: appStore.isDarkMode ? lightGray.withValues(alpha:0.4) : lightGray,
+                        //   dashGapLength: 5,
+                        //   dashLength: 8,
+                        // ).paddingAll(8),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        //   crossAxisAlignment: CrossAxisAlignment.start,
+                        //   children: [
+                        //     ImageBorder(
+                        //       src: widget.bookingData.handyman!.isEmpty
+                        //           ? widget.bookingData.providerImage.validate()
+                        //           : widget.bookingData.isProviderAndHandymanSame
+                        //               ? widget.bookingData.providerImage.validate()
+                        //               : widget.bookingData.handyman!.first.handyman!.handymanImage.validate(),
+                        //       height: 40,
+                        //     ),
+                        //     16.width,
+                        //     Column(
+                        //       crossAxisAlignment: CrossAxisAlignment.start,
+                        //       children: [
+                        //         Row(
+                        //           children: [
+                        //           //   Marquee(
+                        //           //     child: Text(
+                        //           //       widget.bookingData.handyman.validate().first.handyman!.displayName.validate(),
+                        //           //       style: boldTextStyle(size: 12),
+                        //           //     ),
+                        //           //   ).flexible(),
+                        //           //   4.width,
+                        //           //   ImageIcon(
+                        //           //     AssetImage(ic_verified),
+                        //           //     size: 14,
+                        //           //     color: Colors.green,
+                        //           //   ).visible(
+                        //           //     widget.bookingData.handyman!.isEmpty
+                        //           //         ? widget.bookingData.providerIsVerified.validate() == 1
+                        //           //         : widget.bookingData.isProviderAndHandymanSame
+                        //           //             ? widget.bookingData.providerIsVerified.validate() == 1
+                        //           //             : widget.bookingData.handyman!.first.handyman!.isVerifiedHandyman.validate() == 1,
+                        //           //   ),
+                        //           ],
+                        //         ),
+                        //         4.height,
+                        //         // Text(
+                        //         //   languages.handyman,
+                        //         //   style: secondaryTextStyle(),
+                        //         //   maxLines: 1,
+                        //         //   overflow: TextOverflow.ellipsis,
+                        //         // ),
+                        //       ],
+                        //     ).flexible(),
+                        //   ],
+                        // ).paddingAll(8),
                       ],
                     ),
                 ],
@@ -542,25 +542,25 @@ class BookingItemComponentState extends State<BookingItemComponent> {
             Column(
               children: [
                 8.height,
-                AppButton(
-                  width: context.width(),
-                  child: Text(
-                    widget.bookingData.handyman!.isEmpty ? languages.lblAssign : languages.lblReassign,
-                    style: boldTextStyle(color: white),
-                  ),
-                  color: primaryColor,
-                  elevation: 0,
-                  onTap: () {
-                    AssignHandymanScreen(
-                      bookingId: widget.bookingData.id,
-                      serviceAddressId: widget.bookingData.bookingAddressId,
-                      onUpdate: () {
-                        setState(() {});
-                        LiveStream().emit(LIVESTREAM_UPDATE_BOOKINGS);
-                      },
-                    ).launch(context);
-                  },
-                ),
+                // AppButton(
+                //   width: context.width(),
+                //   child: Text(
+                //     widget.bookingData.handyman!.isEmpty ? languages.lblAssign : languages.lblReassign,
+                //     style: boldTextStyle(color: white),
+                //   ),
+                //   color: primaryColor,
+                //   elevation: 0,
+                //   onTap: () {
+                //     AssignHandymanScreen(
+                //       bookingId: widget.bookingData.id,
+                //       serviceAddressId: widget.bookingData.bookingAddressId,
+                //       onUpdate: () {
+                //         setState(() {});
+                //         LiveStream().emit(LIVESTREAM_UPDATE_BOOKINGS);
+                //       },
+                //     ).launch(context);
+                //   },
+                // ),
               ],
             ).paddingAll(8),
         ],

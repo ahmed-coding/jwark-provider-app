@@ -1032,7 +1032,7 @@ class BookingDetailScreenState extends State<BookingDetailScreen> with WidgetsBi
         ],
       );
     } else if (res.bookingDetail!.status == BookingStatusKeys.accept) {
-      showBottomActionBar = true;
+      showBottomActionBar = false;
 
       if (res.handymanData.validate().isEmpty) {
         return AppButton(
@@ -1042,22 +1042,23 @@ class BookingDetailScreenState extends State<BookingDetailScreen> with WidgetsBi
             assignBookingDialog(context, res.bookingDetail!.id, res.bookingDetail!.bookingAddressId);
           },
         );
-      } else if (res.handymanData!.isNotEmpty) {
-        return Column(
-          children: [
-            Text('${res.handymanData!.first.displayName.validate()} ${languages.lblAssigned}', style: boldTextStyle()).center(),
-            16.height,
-            AppButton(
-              width: context.width(),
-              text: languages.lblReassign,
-              color: context.primaryColor,
-              onTap: () {
-                assignBookingDialog(context, res.bookingDetail!.id, res.bookingDetail!.bookingAddressId);
-              },
-            ),
-          ],
-        );
-      }
+      } 
+      // else if (res.handymanData!.isNotEmpty) {
+      //   return Column(
+      //     children: [
+      //       Text('${res.handymanData!.first.displayName.validate()} ${languages.lblAssigned}', style: boldTextStyle()).center(),
+      //       16.height,
+      //       AppButton(
+      //         width: context.width(),
+      //         text: languages.lblReassign,
+      //         color: context.primaryColor,
+      //         onTap: () {
+      //           assignBookingDialog(context, res.bookingDetail!.id, res.bookingDetail!.bookingAddressId);
+      //         },
+      //       ),
+      //     ],
+      //   );
+      // }
     }
 
     return Offstage();
