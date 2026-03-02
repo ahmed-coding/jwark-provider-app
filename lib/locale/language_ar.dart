@@ -634,10 +634,10 @@ class LanguageAr extends Languages {
   String get lblSubscriptionTitle => 'هل تريد إلغاء الخطة الحالية؟';
 
   @override
-  String get lblPlan => "حزمة";
+  String get lblPlan => "عروض";
 
   @override
-  String get lblCancelPlan => "إلغاء الحزمة";
+  String get lblCancelPlan => "إلغاء العرض";
 
   @override
   String get lblSubscriptionHistory => "تاريخ الاشتراك";
@@ -1052,7 +1052,7 @@ class LanguageAr extends Languages {
   String get postJob => 'طلب عمل';
 
   @override
-  String get categoryBasedPackage => 'فئات الحزمة';
+  String get categoryBasedPackage => 'فئات العروض';
 
   @override
   String get subTitleOfSelectService =>
@@ -1074,28 +1074,28 @@ class LanguageAr extends Languages {
   String get disable => 'الغاء تفعيل';
 
   @override
-  String get package => 'حزمة';
+  String get package => 'عروض';
 
   @override
-  String get packages => 'حزم';
+  String get packages => 'العروض';
 
   @override
-  String get packageService => 'خدمة الحزمة';
+  String get packageService => 'خدمة العروض';
 
   @override
-  String get confirmationRemovePackage => 'هل تريد إزالة هذه الخدمة من الحزمة؟';
+  String get confirmationRemovePackage => 'هل تريد إزالة هذه الخدمة من العرض';
 
   @override
-  String get packageName => 'اسم الحزمة';
+  String get packageName => 'اسم العرض';
 
   @override
   String get selectService => 'حدد الخدمة';
 
   @override
-  String get packageDescription => 'وصف الحزمة';
+  String get packageDescription => 'وصف العرض';
 
   @override
-  String get packagePrice => 'سعر الحزمة';
+  String get packagePrice => 'سعر العرض';
 
   @override
   String get startDate => 'تاريخ البدء';
@@ -1110,22 +1110,22 @@ class LanguageAr extends Languages {
   String get pleaseEnterTheEndDate => 'الرجاء إدخال تاريخ الانتهاء';
 
   @override
-  String get editPackage => 'تحرير الحزمة';
+  String get editPackage => 'تحرير العرضٍ';
 
   @override
-  String get addPackage => 'أضف الحزمة';
+  String get addPackage => 'أضف العرض';
 
   @override
   String get areYouSureWantToDeleteThe => 'هل أنت متأكد من حذف';
 
   @override
-  String get packageNotAvailable => 'الحزمة غير متوفرة';
+  String get packageNotAvailable => 'العرضٍٍ غير متوفرة';
 
   @override
-  String get includedInThisPackage => 'مضافة في هذه الحزمة';
+  String get includedInThisPackage => 'مضافة في هذه العرض';
 
   @override
-  String get packageServicesWillAppearHere => 'ستظهر خدمات الحزمة هنا';
+  String get packageServicesWillAppearHere => 'ستظهر خدمات العرض هنا';
 
   @override
   String get showingFixPriceServices => 'إظهار الخدمات ثابتة الاسعار';
@@ -1138,7 +1138,7 @@ class LanguageAr extends Languages {
 
   @override
   String get youWillGetTheseServicesWithThisPackage =>
-      'ستحصل على هذه الخدمات مع هذه الحزمة';
+      'ستحصل على هذه الخدمات مع هذه العرض';
 
   @override
   String get lblSearchFullAddress => 'ابحث باستخدام العنوان الكامل';
@@ -1939,7 +1939,7 @@ class LanguageAr extends Languages {
   String get tue => 'الثلاثاء';
 
   @override
-  String get wed => 'تزوج';
+  String get wed => 'الاربعاء';
 
   @override
   String get thu => 'الخميس';
@@ -1948,10 +1948,10 @@ class LanguageAr extends Languages {
   String get fri => 'الجمعة';
 
   @override
-  String get sat => 'قعد';
+  String get sat => 'السبت';
 
   @override
-  String get sun => 'شمس';
+  String get sun => 'الاحد';
 
   @override
   String get jan => 'يناير';
@@ -1966,7 +1966,7 @@ class LanguageAr extends Languages {
   String get apr => 'أبريل';
 
   @override
-  String get may => 'يمكن';
+  String get may => 'مايو';
 
   @override
   String get jun => 'يونيو';
