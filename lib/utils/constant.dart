@@ -371,13 +371,13 @@ const VISIT_OPTION_ONLINE = 'online';
 const GOOGLE_MAP_PREFIX = 'https://www.google.com/maps/search/?api=1&query=';
 
 List<String> daysList = [
+  languages.sat,
+  languages.sun,
   languages.mon,
   languages.tue,
   languages.wed,
   languages.thu,
   languages.fri,
-  languages.sat,
-  languages.sun,
 ];
 
 List<String> months = [
