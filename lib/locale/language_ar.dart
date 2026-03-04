@@ -4,10 +4,10 @@ class LanguageAr extends Languages {
   @override
   String planAboutToExpire(int days) => 'خطتك على وشك الانتهاء خلال $days أيام';
   @override
-  String get appName => 'مزود';
+  String get appName => ' مزود ';
 
   @override
-  String get provider => 'مزود';
+  String get provider => 'مزود خدمة ';
 
   @override
   String get lblShowingOnly4Handyman => 'اضهار ٤ عمال فقط';
@@ -25,7 +25,7 @@ class LanguageAr extends Languages {
   String get signIn => 'تسجيل دخول';
 
   @override
-  String get signUp => 'اشتراك';
+  String get signUp => 'انشاء حساب';
 
   @override
   String get hintFirstNameTxt => 'أدخل اسمك الأول';
@@ -402,7 +402,7 @@ class LanguageAr extends Languages {
   String get lblSignupTitle => "مرحبا";
 
   @override
-  String get lblSignupSubtitle => "انشيء حسابك للحصول على تجربة أفضل";
+  String get lblSignupSubtitle => "انشاء حسابك للحصول على تجربة أفضل";
 
   @override
   String get lblSignup => "تسجيل";
@@ -712,7 +712,7 @@ class LanguageAr extends Languages {
   String get lblFailed => "سبب فشل هذا الحجز";
 
   @override
-  String get lblDesignation => "اللقب";
+  String get lblDesignation => "اسم الخدمة الخاصة بك";
 
   @override
   String get lblHandymanIsOffline => "العامل غير متصل";
@@ -1369,7 +1369,7 @@ class LanguageAr extends Languages {
   String get selectPlanSubTitle => 'اختر خطة مصممة لاحتياجاتك';
 
   @override
-  String get userRole => 'دور المستخدم';
+  String get userRole => 'صلاحية الاستخدام';
 
   @override
   String get paymentHistory => 'سجل الدفعات';
