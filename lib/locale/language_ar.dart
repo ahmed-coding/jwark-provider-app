@@ -1744,7 +1744,7 @@ class LanguageAr extends Languages {
   String get writeHere => 'اكتب هنا';
 
   @override
-  String get writeShortLineAbout => 'اكتب خطًا قصيرًا ، لماذا تختارني؟';
+  String get writeShortLineAbout => ' لماذا تختارني؟ ';
 
   @override
   String get reasonsToChooseYour => 'أسباب اختيار خدمتك';
@@ -2408,7 +2408,7 @@ class LanguageAr extends Languages {
   String get doYouWantToDeleteBanner => 'هل تريد حذف هذا الشعار';
 
   @override
-  String get link => 'وصلة';
+  String get link => 'عبر الرابط';
 
   @override
   String get youHaveAnInsufficient =>
@@ -2447,10 +2447,10 @@ class LanguageAr extends Languages {
       'تم تحديد $totalDaysCount من الأيام';
 
   @override
-  String get promotionalBannerDetail => 'تفاصيل لافتة ترويجية';
+  String get promotionalBannerDetail => 'تفاصيل الافتة الترويجية';
 
   @override
-  String get promotionalBanner => 'لافتة ترويجية';
+  String get promotionalBanner => 'الافتة الترويجية';
 
   @override
   String promotionalBannerYet(String name) =>
