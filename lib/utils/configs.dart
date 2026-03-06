@@ -26,13 +26,13 @@ const HELP_LINE_NUMBER = '+967770948670';
 
 //Airtel Money Payments
 ///It Supports ["UGX", "NGN", "TZS", "KES", "RWF", "ZMW", "CFA", "XOF", "XAF", "CDF", "USD", "XAF", "SCR", "MGA", "MWK"]
-const AIRTEL_CURRENCY_CODE = "MWK";
-const AIRTEL_COUNTRY_CODE = "MW";
+const AIRTEL_CURRENCY_CODE = "YER";
+const AIRTEL_COUNTRY_CODE = "YER";
 const AIRTEL_TEST_BASE_URL = 'https://openapiuat.airtel.africa/'; //Test Url
 const AIRTEL_LIVE_BASE_URL = 'https://openapi.airtel.africa/'; // Live Url
 
 /// PAYSTACK PAYMENT DETAIL
-const PAYSTACK_CURRENCY_CODE = 'NGN';
+const PAYSTACK_CURRENCY_CODE = 'YER';
 
 /// SADAD PAYMENT DETAIL
 const SADAD_API_URL = 'https://api-s.sadad.qa';
@@ -42,11 +42,11 @@ const SADAD_PAY_URL = "https://d.sadad.qa";
 const RAZORPAY_CURRENCY_CODE = 'YER';
 
 /// PAYPAL PAYMENT DETAIL
-const PAYPAL_CURRENCY_CODE = 'USD';
+const PAYPAL_CURRENCY_CODE = 'YER';
 
 /// STRIPE PAYMENT DETAIL
-const STRIPE_MERCHANT_COUNTRY_CODE = 'IN';
-const STRIPE_CURRENCY_CODE = 'INR';
+const STRIPE_MERCHANT_COUNTRY_CODE = 'YER';
+const STRIPE_CURRENCY_CODE = 'YER';
 
 Country defaultCountry() {
   return Country(

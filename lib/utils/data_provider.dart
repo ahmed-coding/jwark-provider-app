@@ -14,7 +14,7 @@ List<AboutModel> getAboutDataModel({BuildContext? context}) {
   if(rolesAndPermissionStore.helpAndSupport)
   aboutList.add(AboutModel(title: languages.lblHelpAndSupport, image: termCondition));
   aboutList.add(AboutModel(title: languages.lblHelpLineNum, image: calling));
-  aboutList.add(AboutModel(title: languages.lblRateUs, image: rateUs));
+  // aboutList.add(AboutModel(title: languages.lblRateUs, image: rateUs));
 
   return aboutList;
 }
