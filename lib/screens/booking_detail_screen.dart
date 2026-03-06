@@ -717,127 +717,127 @@ class BookingDetailScreenState extends State<BookingDetailScreen> with WidgetsBi
     ).paddingSymmetric(horizontal: 16).visible(bookingDetailResponse.service!.totalRating != null);
   }
 
-  Widget locationTrackWidget({BookingDetailResponse? data}) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        8.height,
-        Text(
-          languages.handymanLocation,
-          style: boldTextStyle(),
-        ),
-        4.height,
-        Row(
-          children: [
-            Text("${languages.lastUpdatedAt} ", style: secondaryTextStyle(size: 10)),
-            Text(
-              "${DateTime.parse(handymanLocation?.data.datetime.toString() ?? DateTime.now().toString()).timeAgo}",
-              style: primaryTextStyle(size: 10),
-            ),
-          ],
-        ).visible(handymanLocation?.data.datetime.isNotEmpty ?? false),
-        12.height,
-        Container(
-          height: 250,
-          decoration: boxDecorationDefault(),
-          child: Stack(
-            children: [
-              GoogleMap(
-                initialCameraPosition: _initialLocation,
-                mapType: MapType.normal,
-                minMaxZoomPreference: MinMaxZoomPreference(1, 40),
-                gestureRecognizers: Set()
-                  ..add(Factory<OneSequenceGestureRecognizer>(() => new EagerGestureRecognizer()))
-                  ..add(Factory<PanGestureRecognizer>(() => PanGestureRecognizer()))
-                  ..add(Factory<ScaleGestureRecognizer>(() => ScaleGestureRecognizer()))
-                  ..add(Factory<TapGestureRecognizer>(() => TapGestureRecognizer()))
-                  ..add(Factory<VerticalDragGestureRecognizer>(() => VerticalDragGestureRecognizer())),
-                onMapCreated: (GoogleMapController controller) {
-                  print("Map created");
-                  mapController = controller;
-                  if (_currentPosition != null) {
-                    controller.animateCamera(CameraUpdate.newCameraPosition(
-                      CameraPosition(target: _currentPosition!, zoom: 15),
-                    ));
-                  }
-                },
-                markers: _currentPosition != null && customIcon != null
-                    ? {
-                        Marker(
-                          markerId: MarkerId('handyman_location'),
-                          position: _currentPosition!,
-                          icon: customIcon!,
-                        ),
-                      }
-                    : {},
-              ),
-              Positioned(
-                left: 10,
-                top: 10,
-                child: CupertinoActivityIndicator(color: black).visible(isLocationLoader),
-              ),
-            ],
-          ),
-        ),
-        10.height,
-        Row(
-          children: [
-            AppButton(
-              onTap: () {
-                TrackLocation(
-                  bookingId: widget.bookingId,
-                ).launch(context);
-              },
-              padding: EdgeInsets.only(top: 0, left: 8, right: 8),
-              height: 42,
-              color: Color(0xFF39A81D),
-              textColor: white,
-              text: languages.track,
-            ).expand(),
-            16.width,
-            Container(
-              width: 42,
-              height: 42,
-              padding: EdgeInsets.all(12),
-              decoration: boxDecorationDefault(
-                color: Colors.white,
-                borderRadius: BorderRadius.all(Radius.circular(6)),
-              ),
-              child: CachedImageWidget(
-                url: ic_refresh,
-                color: textSecondaryColor,
-                height: 42,
-              ),
-            ).onTap(() {
-              startLocationUpdates(status: data?.bookingDetail?.status.validate() ?? "", handymanID: data?.handymanData?.first.id.validate() ?? -1);
-            }),
-            16.width,
-            Container(
-              width: 42,
-              height: 42,
-              padding: EdgeInsets.all(12),
-              decoration: boxDecorationDefault(
-                color: Colors.white,
-                borderRadius: BorderRadius.all(
-                  Radius.circular(6),
-                ),
-              ),
-              child: CachedImageWidget(
-                url: ic_share,
-                color: textSecondaryColor,
-                height: 42,
-              ),
-            ).onTap(
-              () {
-                shareComponent();
-              },
-            ),
-          ],
-        ),
-      ],
-    ).paddingSymmetric(horizontal: 16, vertical: 16);
-  }
+  // Widget locationTrackWidget({BookingDetailResponse? data}) {
+  //   return Column(
+  //     mainAxisAlignment: MainAxisAlignment.start,
+  //     crossAxisAlignment: CrossAxisAlignment.start,
+  //     children: [
+  //       8.height,
+  //       Text(
+  //         languages.handymanLocation,
+  //         style: boldTextStyle(),
+  //       ),
+  //       4.height,
+  //       Row(
+  //         children: [
+  //           Text("${languages.lastUpdatedAt} ", style: secondaryTextStyle(size: 10)),
+  //           Text(
+  //             "${DateTime.parse(handymanLocation?.data.datetime.toString() ?? DateTime.now().toString()).timeAgo}",
+  //             style: primaryTextStyle(size: 10),
+  //           ),
+  //         ],
+  //       ).visible(handymanLocation?.data.datetime.isNotEmpty ?? false),
+  //       12.height,
+  //       Container(
+  //         height: 250,
+  //         decoration: boxDecorationDefault(),
+  //         child: Stack(
+  //           children: [
+  //             GoogleMap(
+  //               initialCameraPosition: _initialLocation,
+  //               mapType: MapType.normal,
+  //               minMaxZoomPreference: MinMaxZoomPreference(1, 40),
+  //               gestureRecognizers: Set()
+  //                 ..add(Factory<OneSequenceGestureRecognizer>(() => new EagerGestureRecognizer()))
+  //                 ..add(Factory<PanGestureRecognizer>(() => PanGestureRecognizer()))
+  //                 ..add(Factory<ScaleGestureRecognizer>(() => ScaleGestureRecognizer()))
+  //                 ..add(Factory<TapGestureRecognizer>(() => TapGestureRecognizer()))
+  //                 ..add(Factory<VerticalDragGestureRecognizer>(() => VerticalDragGestureRecognizer())),
+  //               onMapCreated: (GoogleMapController controller) {
+  //                 print("Map created");
+  //                 mapController = controller;
+  //                 if (_currentPosition != null) {
+  //                   controller.animateCamera(CameraUpdate.newCameraPosition(
+  //                     CameraPosition(target: _currentPosition!, zoom: 15),
+  //                   ));
+  //                 }
+  //               },
+  //               markers: _currentPosition != null && customIcon != null
+  //                   ? {
+  //                       Marker(
+  //                         markerId: MarkerId('handyman_location'),
+  //                         position: _currentPosition!,
+  //                         icon: customIcon!,
+  //                       ),
+  //                     }
+  //                   : {},
+  //             ),
+  //             Positioned(
+  //               left: 10,
+  //               top: 10,
+  //               child: CupertinoActivityIndicator(color: black).visible(isLocationLoader),
+  //             ),
+  //           ],
+  //         ),
+  //       ),
+  //       10.height,
+  //       Row(
+  //         children: [
+  //           AppButton(
+  //             onTap: () {
+  //               TrackLocation(
+  //                 bookingId: widget.bookingId,
+  //               ).launch(context);
+  //             },
+  //             padding: EdgeInsets.only(top: 0, left: 8, right: 8),
+  //             height: 42,
+  //             color: Color(0xFF39A81D),
+  //             textColor: white,
+  //             text: languages.track,
+  //           ).expand(),
+  //           16.width,
+  //           Container(
+  //             width: 42,
+  //             height: 42,
+  //             padding: EdgeInsets.all(12),
+  //             decoration: boxDecorationDefault(
+  //               color: Colors.white,
+  //               borderRadius: BorderRadius.all(Radius.circular(6)),
+  //             ),
+  //             child: CachedImageWidget(
+  //               url: ic_refresh,
+  //               color: textSecondaryColor,
+  //               height: 42,
+  //             ),
+  //           ).onTap(() {
+  //             startLocationUpdates(status: data?.bookingDetail?.status.validate() ?? "", handymanID: data?.handymanData?.first.id.validate() ?? -1);
+  //           }),
+  //           16.width,
+  //           Container(
+  //             width: 42,
+  //             height: 42,
+  //             padding: EdgeInsets.all(12),
+  //             decoration: boxDecorationDefault(
+  //               color: Colors.white,
+  //               borderRadius: BorderRadius.all(
+  //                 Radius.circular(6),
+  //               ),
+  //             ),
+  //             child: CachedImageWidget(
+  //               url: ic_share,
+  //               color: textSecondaryColor,
+  //               height: 42,
+  //             ),
+  //           ).onTap(
+  //             () {
+  //               shareComponent();
+  //             },
+  //           ),
+  //         ],
+  //       ),
+  //     ],
+  //   ).paddingSymmetric(horizontal: 16, vertical: 16);
+  // }
 
   Widget myServiceList({required List<ServiceData> serviceList}) {
     return Column(
@@ -1292,7 +1292,7 @@ class BookingDetailScreenState extends State<BookingDetailScreen> with WidgetsBi
                   _buildCounterWidget(value: res.data!),
 
                   /// Location Tracking
-                  locationTrackWidget(data: res.data).visible(BookingStatusKeys.onGoing == res.data!.bookingDetail!.status && !isUserTypeHandyman && res.data!.handymanData![0].id != appStore.userId),
+                  // locationTrackWidget(data: res.data).visible(BookingStatusKeys.onGoing == res.data!.bookingDetail!.status && !isUserTypeHandyman && res.data!.handymanData![0].id != appStore.userId),
 
                   /// My Service List
                   if (res.data!.postRequestDetail != null && res.data!.postRequestDetail!.service != null) myServiceList(serviceList: res.data!.postRequestDetail!.service!),
@@ -1304,43 +1304,43 @@ class BookingDetailScreenState extends State<BookingDetailScreen> with WidgetsBi
                   ServiceProofListWidget(serviceProofList: res.data!.serviceProof!),
 
                   /// Last Updated
-                  if (BookingStatusKeys.onGoing == res.data!.bookingDetail!.status && res.data!.handymanData![0].id == appStore.userId) 16.height,
-                  if (BookingStatusKeys.onGoing == res.data!.bookingDetail!.status && res.data!.handymanData![0].id == appStore.userId)
-                    Container(
-                      width: context.width(),
-                      decoration: boxDecorationWithRoundedCorners(
-                        backgroundColor: context.cardColor,
-                        borderRadius: BorderRadius.all(Radius.circular(12)),
-                      ),
-                      padding: EdgeInsets.only(top: 4, left: 4, right: 4, bottom: 4),
-                      child: Row(
-                        children: [
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              12.height,
-                              Text.rich(
-                                TextSpan(
-                                  children: [
-                                    TextSpan(text: languages.lastUpdatedAt, style: secondaryTextStyle(size: 12)),
-                                    TextSpan(text: " ${DateTime.parse(handymanLocation?.data.datetime.toString() ?? DateTime.now().toString()).timeAgo}", style: secondaryTextStyle(size: 12)),
-                                  ],
-                                ),
-                              ).paddingOnly(left: 16),
-                              TextButton(
-                                // iconAlignment: IconAlignment.start,
-                                child: Text(languages.updateYourLocation, style: boldTextStyle(size: 12, color: primaryColor)),
-                                onPressed: () {
-                                  startLocationUpdates(status: res.data?.bookingDetail?.status.validate() ?? "", handymanID: res.data?.handymanData?.first.id.validate() ?? -1);
-                                },
-                                isSemanticButton: false,
-                              ).paddingLeft(3),
-                            ],
-                          ).expand(),
-                          CachedImageWidget(url: img_location, height: 80)
-                        ],
-                      ),
-                    ).paddingOnly(left: 16, right: 16),
+                  // if (BookingStatusKeys.onGoing == res.data!.bookingDetail!.status && res.data!.handymanData![0].id == appStore.userId) 16.height,
+                  // if (BookingStatusKeys.onGoing == res.data!.bookingDetail!.status && res.data!.handymanData![0].id == appStore.userId)
+                  //   Container(
+                  //     width: context.width(),
+                  //     decoration: boxDecorationWithRoundedCorners(
+                  //       backgroundColor: context.cardColor,
+                  //       borderRadius: BorderRadius.all(Radius.circular(12)),
+                  //     ),
+                  //     padding: EdgeInsets.only(top: 4, left: 4, right: 4, bottom: 4),
+                  //     child: Row(
+                  //       children: [
+                  //         Column(
+                  //           crossAxisAlignment: CrossAxisAlignment.start,
+                  //           children: [
+                  //             12.height,
+                  //             Text.rich(
+                  //               TextSpan(
+                  //                 children: [
+                  //                   TextSpan(text: languages.lastUpdatedAt, style: secondaryTextStyle(size: 12)),
+                  //                   TextSpan(text: " ${DateTime.parse(handymanLocation?.data.datetime.toString() ?? DateTime.now().toString()).timeAgo}", style: secondaryTextStyle(size: 12)),
+                  //                 ],
+                  //               ),
+                  //             ).paddingOnly(left: 16),
+                  //             TextButton(
+                  //               // iconAlignment: IconAlignment.start,
+                  //               child: Text(languages.updateYourLocation, style: boldTextStyle(size: 12, color: primaryColor)),
+                  //               onPressed: () {
+                  //                 startLocationUpdates(status: res.data?.bookingDetail?.status.validate() ?? "", handymanID: res.data?.handymanData?.first.id.validate() ?? -1);
+                  //               },
+                  //               isSemanticButton: false,
+                  //             ).paddingLeft(3),
+                  //           ],
+                  //         ).expand(),
+                  //         CachedImageWidget(url: img_location, height: 80)
+                  //       ],
+                  //     ),
+                  //   ).paddingOnly(left: 16, right: 16),
 
                   /// About Handyman Card
                   // if (res.data!.handymanData!.isNotEmpty && appStore.userType != USER_TYPE_HANDYMAN)
