@@ -52,7 +52,7 @@ class BasicInfoComponentState extends State<BasicInfoComponent> {
 
   int? flag;
 
-  bool isChattingAllow = false;
+  bool isChattingAllow = true;
 
   bool showVerifiedBadge = false;
 
@@ -252,7 +252,8 @@ class BasicInfoComponentState extends State<BasicInfoComponent> {
                   if (user != null) {
                     Fluttertoast.cancel();
                     if (widget.bookingDetail != null) {
-                      isChattingAllow = widget.bookingDetail!.status == BookingStatusKeys.complete || widget.bookingDetail!.status == BookingStatusKeys.cancelled;
+                      // isChattingAllow = widget.bookingDetail!.status == BookingStatusKeys.complete || widget.bookingDetail!.status == BookingStatusKeys.cancelled;
+                      isChattingAllow = true;
                     }
                     UserChatScreen(receiverUser: user, isChattingAllow: isChattingAllow).launch(context);
                   } else {
