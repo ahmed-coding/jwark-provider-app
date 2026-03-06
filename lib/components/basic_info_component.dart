@@ -255,7 +255,7 @@ class BasicInfoComponentState extends State<BasicInfoComponent> {
                       // isChattingAllow = widget.bookingDetail!.status == BookingStatusKeys.complete || widget.bookingDetail!.status == BookingStatusKeys.cancelled;
                       isChattingAllow = true;
                     }
-                    UserChatScreen(receiverUser: user, isChattingAllow: isChattingAllow).launch(context);
+                    UserChatScreen(receiverUser: user, isChattingAllow: true).launch(context);
                   } else {
                     Fluttertoast.cancel();
                     toast("${userData.firstName} ${languages.isNotAvailableForChat}");
