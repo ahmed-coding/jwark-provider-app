@@ -839,7 +839,7 @@ class LanguageAr extends Languages {
   String get lblChargeName => "اسم المسؤول";
 
   @override
-  String get lblPrice => "سعر";
+  String get lblPrice => "السعر";
 
   @override
   String get lblEnterAmount => "أدخل المبلغ";
@@ -1735,10 +1735,10 @@ class LanguageAr extends Languages {
   String get onlineRemoteService => 'خدمة عبر الإنترنت/عن بُعد';
 
   @override
-  String get addOns => 'الوظائف الإضافية';
+  String get addOns => 'الخدمات الإضافية';
 
   @override
-  String get serviceAddOns => 'الوظائف الإضافية للخدمة';
+  String get serviceAddOns => 'الخدمات الإضافية للخدمة';
 
   @override
   String get writeHere => 'اكتب هنا';
@@ -1860,8 +1860,7 @@ class LanguageAr extends Languages {
       "ملاحظة: يمكنك تحميل الصورة باستخدام \ jpg \' ، \ 'png \' ، \ 'jpeg \' extensions ويمكنك تحديد صورة واحدة فقط";
 
   @override
-  String get oppsLooksLikeYou =>
-      'أوس! يبدو أنك لم تضاف أي خدمات الوظائف الإضافية حتى الآن.';
+  String get oppsLooksLikeYou => ' يبدو أنك لم تضيف أي خدمات اضافية حتى الآن.';
 
   @override
   String get ambiguous => 'غامض';
