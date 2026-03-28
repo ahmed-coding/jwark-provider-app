@@ -79,7 +79,7 @@ class LanguageAr extends Languages {
   String get appTheme => 'سمة التطبيق';
 
   @override
-  String get bookingHistory => 'تاريخ الحجز';
+  String get bookingHistory => 'تاريخ الطلب';
 
   @override
   String get logout => 'تسجيل خروج';
@@ -209,7 +209,7 @@ class LanguageAr extends Languages {
   String get lblAddHandyman => 'إضافة لحسابهم الخاص';
 
   @override
-  String get lblBooking => 'الحجز';
+  String get lblBooking => 'الطلبات';
 
   @override
   String get lblTotalBooking => 'مجموع حجوزات';
@@ -227,7 +227,7 @@ class LanguageAr extends Languages {
   String get lblPayment => 'الدفعات';
 
   @override
-  String get lblBookingID => 'رقم الحجز';
+  String get lblBookingID => 'رقم الطلب';
 
   @override
   String get lblPaymentID => 'معرف الدفع';
@@ -375,7 +375,7 @@ class LanguageAr extends Languages {
   String get lblHelpAndSupport => 'المساعدة والدعم';
 
   @override
-  String get lblAbout => "عن";
+  String get lblAbout => "عن التطبيق";
 
   @override
   String get lblProviderType => "نوع مقدم الخدمة";
@@ -703,13 +703,13 @@ class LanguageAr extends Languages {
   String get lblHelpLineNum => "رقم خط المساعدة";
 
   @override
-  String get lblReasonCancelling => "سبب إلغاء هذا الحجز";
+  String get lblReasonCancelling => "سبب إلغاء هذا الطلب";
 
   @override
-  String get lblReasonRejecting => "سبب رفض هذا الحجز";
+  String get lblReasonRejecting => "سبب رفض هذا الطلب";
 
   @override
-  String get lblFailed => "سبب فشل هذا الحجز";
+  String get lblFailed => "سبب فشل هذا الطلب";
 
   @override
   String get lblDesignation => "اسم الخدمة الخاصة بك";
@@ -848,10 +848,10 @@ class LanguageAr extends Languages {
   String get lblHourly => "بالساعة";
 
   @override
-  String get noBookingTitle => "لم يتم العثور على الحجز";
+  String get noBookingTitle => "لم يتم العثور على الطلبات";
 
   @override
-  String get noBookingSubTitle => "يبدو أن عميلك لم يحجز خدماتك بعد";
+  String get noBookingSubTitle => "يبدو أن عميلك لم يطلب خدماتك بعد";
 
   @override
   String get noNotificationTitle => "لا يوجد اسم للاشعار";
@@ -1363,7 +1363,7 @@ class LanguageAr extends Languages {
   String get handymanHome => 'عامل المنزل';
 
   @override
-  String get home => 'منزل';
+  String get home => 'الرئيسية';
 
   @override
   String get selectPlanSubTitle => 'اختر خطة مصممة لاحتياجاتك';
@@ -1561,7 +1561,7 @@ class LanguageAr extends Languages {
   String get from => 'من';
 
   @override
-  String get booking => 'الحجز';
+  String get booking => 'الطلب';
 
   @override
   String get choosePaymentMethod => 'اختر وسيلة الدفع';
@@ -1648,7 +1648,7 @@ class LanguageAr extends Languages {
   String get search => 'يبحث';
 
   @override
-  String get wouldYouLikeToAssignThisBooking => 'هل ترغب في تعيين هذا الحجز؟';
+  String get wouldYouLikeToAssignThisBooking => 'هل ترغب في تعيين هذا الطلب؟';
 
   @override
   String get connect => 'يتصل';
@@ -1697,7 +1697,7 @@ class LanguageAr extends Languages {
   String get clearFilter => 'مرشح واضح';
 
   @override
-  String get bookingStatus => 'وضع الحجز';
+  String get bookingStatus => 'وضع الطلب';
 
   @override
   String get filterBy => 'مصنف بواسطة';
@@ -1992,7 +1992,7 @@ class LanguageAr extends Languages {
   String get pushNotification => 'دفع الإخطار';
 
   @override
-  String get sentYouAMessage => 'أرسلت لك رسالة';
+  String get sentYouAMessage => 'أرسل لك رسالة';
 
   @override
   String get deleteMessage => 'حذف رسالة';
@@ -2291,10 +2291,10 @@ class LanguageAr extends Languages {
   String get other => 'آخر';
 
   @override
-  String get setting => 'جلسة';
+  String get setting => 'اعدادات التطبيق';
 
   @override
-  String get viewBreakdown => 'عرض الانهيار';
+  String get viewBreakdown => 'عرض الاجمالي';
 
   @override
   String get totalAmount => 'المبلغ الإجمالي:';
@@ -2309,7 +2309,7 @@ class LanguageAr extends Languages {
   String get paymentType => 'نوع الدفع';
 
   @override
-  String get dateRange => 'النطاق الزمني';
+  String get dateRange => 'قوم بتحديد التاريخ';
 
   @override
   String get providerNotFound => 'لم يتم العثور على الموفر';
@@ -2330,7 +2330,8 @@ class LanguageAr extends Languages {
   String get to => 'ل';
 
   @override
-  String get chooseYourDateRange => 'اختر النطاق الزمني الخاص بك';
+  String get chooseYourDateRange =>
+      'اختر التاريخ الذي تود فية اظهار الافتة تبعك';
 
   @override
   String get advancedRefund => 'استرداد متقدم';
@@ -2395,7 +2396,7 @@ class LanguageAr extends Languages {
       'يجب أن يكون طول كلمة المرور من 8 إلى 12 حرفًا.';
 
   @override
-  String get promotionalBanners => 'لافتات ترويجية';
+  String get promotionalBanners => 'الافتات الترويجية';
 
   @override
   String get chooseAnyOnePayment => 'اختر أي طريقة دفع واحدة أولاً';
@@ -2418,7 +2419,7 @@ class LanguageAr extends Languages {
 
   @override
   String promoteYourBusinessBanners(String perDayAmount) =>
-      'قم بترويج لافتات أعمالك بمبلغ $perDayAmount/day.!';
+      'قم بترويج لافتات خدمتك بمبلغ $perDayAmount/day.!';
 
   @override
   String get advertiseYourServicesEffectively =>
@@ -2429,7 +2430,7 @@ class LanguageAr extends Languages {
 
   @override
   String get eGHandymanTrustedService =>
-      'على سبيل المثال خدمة موثوقة من العامل الماهر';
+      'على سبيل المثال تخفيضات أو اسعار منخفظة';
 
   @override
   String get chooseService => 'اختر الخدمة';
