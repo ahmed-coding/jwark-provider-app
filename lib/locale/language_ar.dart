@@ -492,7 +492,7 @@ class LanguageAr extends Languages {
   String get lblHello => "أهلا";
 
   @override
-  String get lblWelcomeBack => "مرحبا بعودتك!";
+  String get lblWelcomeBack => "مرحبا بعودتك";
 
   @override
   String get lblNoReviewYet => "لا يوجد تقييمات";
@@ -1989,7 +1989,7 @@ class LanguageAr extends Languages {
   String get dec => 'ديسمبر';
 
   @override
-  String get pushNotification => 'دفع الإخطار';
+  String get pushNotification => 'تفعيل الاشعارات الفورية';
 
   @override
   String get sentYouAMessage => 'أرسل لك رسالة';
