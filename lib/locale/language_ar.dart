@@ -661,7 +661,7 @@ class LanguageAr extends Languages {
   String get lblSelectSubCategory => "حدد الفئة الفرعية";
 
   @override
-  String get lblServiceProof => "دليل الخدمة";
+  String get lblServiceProof => "دليل استلام الخدمة";
 
   @override
   String get lblTitle => "عنوان";
@@ -1046,7 +1046,7 @@ class LanguageAr extends Languages {
   String get clearChat => 'حذف الدردشة';
 
   @override
-  String get upcomingBookings => 'الحجوزات القادمة';
+  String get upcomingBookings => 'الطلبات القادمة';
 
   @override
   String get postJob => 'طلب عمل';
@@ -1276,7 +1276,7 @@ class LanguageAr extends Languages {
   String get onGoing => 'جاري التنفيذ';
 
   @override
-  String get inProgress => 'قيد العمل الان';
+  String get inProgress => 'قيد التقدم';
 
   @override
   String get hold => 'توقف';
@@ -1450,10 +1450,10 @@ class LanguageAr extends Languages {
   String get amountToBeReceived => 'المبلغ الواجب استلامه';
 
   @override
-  String get yourCashPaymentForBookingId => 'دفعك النقدي لحجز معرف';
+  String get yourCashPaymentForBookingId => 'معرف دفعك النقدي لطلب';
 
   @override
-  String get isAcceptedAsOn => 'مقبول كما في';
+  String get isAcceptedAsOn => 'مقبول في تاريخ';
 
   @override
   String get sendCashToProvider => 'أرسل النقود إلى المزود';
@@ -2179,7 +2179,7 @@ class LanguageAr extends Languages {
   String get totalActiveCount => 'إجمالي عدد النشطين:';
 
   @override
-  String get completedBookings => 'الحجوزات المكتملة';
+  String get completedBookings => 'الطلبات المكتملة';
 
   @override
   String get pickAProviderYou => 'اختر المزود الذي ترغب في العمل معه';
