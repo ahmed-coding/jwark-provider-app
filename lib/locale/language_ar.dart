@@ -212,7 +212,7 @@ class LanguageAr extends Languages {
   String get lblBooking => 'الطلبات';
 
   @override
-  String get lblTotalBooking => 'مجموع حجوزات';
+  String get lblTotalBooking => 'مجموع الطلبات';
 
   @override
   String get lblTotalService => 'إجمالي الخدمات';
@@ -610,7 +610,7 @@ class LanguageAr extends Languages {
   String get lblChooseYourPlan => "اختر خطتك";
 
   @override
-  String get lblRenewSubTitle => "شراء خطة جديدة للحصول على حجوزات خدمة جديدة";
+  String get lblRenewSubTitle => "شراء خطة جديدة للحصول على طلبات خدمة جديدة";
 
   @override
   String get lblReminder => "تذكير";
@@ -1684,11 +1684,11 @@ class LanguageAr extends Languages {
 
   @override
   String get digitalServiceSwitchSubText =>
-      'حجز الخدمة الرقمية مع تحديثات الحالة الفورية في عملية قصيرة للتفاعلات المباشرة';
+      'طلب الخدمة الرقمية مع تحديثات الحالة الفورية في عملية قصيرة للتفاعلات المباشرة';
 
   @override
   String get filterAtLeastOneBookingStatusToast =>
-      'يرجى التأكد من اختيار حالة حجز واحدة على الأقل';
+      'يرجى التأكد من اختيار حالة طلب واحدة على الأقل';
 
   @override
   String get apply => 'يتقدم';
@@ -1775,7 +1775,7 @@ class LanguageAr extends Languages {
   String get paymentSuccess => 'الدفع الناجح';
 
   @override
-  String get redirectingToBookings => 'إعادة توجيه الحجوزات ..';
+  String get redirectingToBookings => 'إعادة توجيه الطلبات ..';
 
   @override
   String get transactionIsInProcess => 'المعاملة قيد التشغيل ...';
