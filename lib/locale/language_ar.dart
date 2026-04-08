@@ -176,7 +176,7 @@ class LanguageAr extends Languages {
   String get lblYes => 'نعم';
 
   @override
-  String get lblNo => 'لا';
+  String get lblNo => 'لا يوجد في قائمة';
 
   @override
   String get lblReason => 'السبب';
@@ -314,7 +314,7 @@ class LanguageAr extends Languages {
   String get lblServiceAddress => 'عناوين الخدمة';
 
   @override
-  String get lblServices => 'خدمات';
+  String get lblServices => 'الخدمات';
 
   @override
   String get lblEditService => 'تحرير الخدمة';
@@ -348,7 +348,7 @@ class LanguageAr extends Languages {
   String get lblUnAuthorized => "لا يمكن منح المستخدم التجريبي لهذا الإجراء";
 
   @override
-  String get btnVerifyId => "تحقق من هويتك";
+  String get btnVerifyId => "التحقق من هويتك";
 
   @override
   String get confirmationUpload => 'هل أنت متأكد من تحميل هذا المستند؟';
@@ -1122,7 +1122,7 @@ class LanguageAr extends Languages {
   String get packageNotAvailable => 'العرضٍٍ غير متوفرة';
 
   @override
-  String get includedInThisPackage => 'مضافة في هذه العرض';
+  String get includedInThisPackage => 'مضافة في هذه الخدمة';
 
   @override
   String get packageServicesWillAppearHere => 'ستظهر خدمات العرض هنا';
@@ -1216,7 +1216,7 @@ class LanguageAr extends Languages {
   String get personalInfo => 'معلومات شخصية';
 
   @override
-  String get essentialSkills => 'مهارات اساسيه';
+  String get essentialSkills => 'مميزات خدماتك';
 
   @override
   String get knownLanguages => 'اللغات المعروفة';
@@ -1252,7 +1252,7 @@ class LanguageAr extends Languages {
   String get noBlogsFound => 'لم يتم العثور على مدونات';
 
   @override
-  String get aboutYou => 'حولك';
+  String get aboutYou => 'اكتب الاجابة عن السبب هنا';
 
   @override
   String get pleaseAddKnownLanguage => 'الرجاء إضافة لغة معروفة';
@@ -1285,7 +1285,7 @@ class LanguageAr extends Languages {
   String get cancelled => 'ألغيت';
 
   @override
-  String get rejected => 'مرفوض';
+  String get rejected => 'مرفوضة';
 
   @override
   String get failed => 'فشل';
@@ -1744,7 +1744,7 @@ class LanguageAr extends Languages {
   String get writeHere => 'اكتب هنا';
 
   @override
-  String get writeShortLineAbout => ' لماذا تختارني؟ ';
+  String get writeShortLineAbout => 'لماذا تختارني؟';
 
   @override
   String get reasonsToChooseYour => 'أسباب اختيار خدمتك';
@@ -1853,7 +1853,7 @@ class LanguageAr extends Languages {
   String get editAddonService => 'تحرير الخدمة الإضافية';
 
   @override
-  String get addAddonService => 'إضافة خدمة الملحق';
+  String get addAddonService => 'إضافة خدمة اضافية جديدة';
 
   @override
   String get noteYouCanUpload =>
@@ -2192,10 +2192,10 @@ class LanguageAr extends Languages {
       'لقد رفضت إذن تحديد الموقع بشكل دائم، يرجى السماح بتتبع الموقع المباشر من إعداداتك';
 
   @override
-  String get open => 'يفتح';
+  String get open => 'المفتوحة';
 
   @override
-  String get closed => 'مغلق';
+  String get closed => 'المغلقة';
 
   @override
   String get createBy => 'إنشاء بواسطة';
@@ -2213,17 +2213,17 @@ class LanguageAr extends Languages {
   String get addNew => 'أضف جديد';
 
   @override
-  String get queryYet => 'الاستعلام بعد';
+  String get queryYet => 'اي استعلامات قمت بها';
 
   @override
   String get toSubmitYourProblems =>
-      'لإرسال مشاكلك، ما عليك سوى الضغط على زر ""إضافة"" وشرح مخاوفك';
+      'لإرسال مشاكلك، ما عليك سوى الضغط على زر ""إضافة"" وشرح مشكلتك';
 
   @override
-  String get noRecordsFoundFor => 'لم يتم العثور على سجلات ل';
+  String get noRecordsFoundFor => 'لم يتم العثور في سجلات ';
 
   @override
-  String get queries => 'الاستعلامات.';
+  String get queries => 'اي استعلام ';
 
   @override
   String get noActivityYet => 'لا يوجد نشاط حتى الآن';
