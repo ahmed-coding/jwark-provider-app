@@ -743,7 +743,8 @@ class LanguageAr extends Languages {
   String get lblUnderMaintenance => "تحت الصيانة...";
 
   @override
-  String get lblCatchUpAfterAWhile => "التحصيل بعد فترة من الوقت";
+  String get lblCatchUpAfterAWhile =>
+      "يرجى دفع المبلغ المتبقي عليكم ليتم فتح الطبيق لكم";
 
   @override
   String get lblRecheck => "إعادة فحص";
