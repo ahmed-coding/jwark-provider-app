@@ -176,7 +176,7 @@ class LanguageAr extends Languages {
   String get lblYes => 'نعم';
 
   @override
-  String get lblNo => 'لا يوجد في قائمة';
+  String get lblNo => 'لا';
 
   @override
   String get lblReason => 'السبب';
