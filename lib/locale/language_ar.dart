@@ -744,7 +744,7 @@ class LanguageAr extends Languages {
 
   @override
   String get lblCatchUpAfterAWhile =>
-      "يرجى دفع المبلغ المتبقي عليكم ليتم فتح الطبيق لكم";
+      "التطبيق تحت الصيانة يرجى الانتظار فترة من الوقت ليتم اكمال الاجراء";
 
   @override
   String get lblRecheck => "إعادة فحص";
