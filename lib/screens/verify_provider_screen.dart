@@ -273,27 +273,27 @@ class _VerifyProviderScreenState extends State<VerifyProviderScreen> {
                                     child: Text(languages.viewPDF, style: boldTextStyle(color: context.primaryColor)),
                                   ),
                                 ).visible(providerDocuments[index].providerDocument!.contains('.pdf')),
-                                      Container(
-                                        padding: EdgeInsets.all(6),
-                                        decoration: boxDecorationWithRoundedCorners(backgroundColor: white.withValues(alpha:0.5)),
-                                        child: Icon(AntDesign.edit, color: primaryColor, size: 20),
-                                      ).onTap(() {
-                                        getMultipleFile(providerDocuments[index].documentId, updateId: providerDocuments[index].id.validate());
-                                      }).visible(providerDocuments[index].isVerified == 0  && rolesAndPermissionStore.providerDocumentEdit),
-                                      6.width,
-                                  Container(
-                                        padding: EdgeInsets.all(6),
-                                        decoration: boxDecorationWithRoundedCorners(
-                                          backgroundColor: Colors.white.withValues(alpha:0.4),
-                                        ),
-                                        child: Icon(Icons.delete_forever, color: Colors.red, size: 20),
-                                      ).onTap(() {
-                                        showConfirmDialogCustom(context, dialogType: DialogType.DELETE, positiveText: languages.lblDelete, negativeText: languages.lblNo, onAccept: (_) {
-                                          ifNotTester(context, () {
-                                            deleteDoc(providerDocuments[index].id);
-                                          });
-                                        });
-                                      }).visible(providerDocuments[index].isVerified == 0  && rolesAndPermissionStore.providerDocumentDelete),
+                                      // Container(
+                                      //   padding: EdgeInsets.all(6),
+                                      //   decoration: boxDecorationWithRoundedCorners(backgroundColor: white.withValues(alpha:0.5)),
+                                      //   child: Icon(AntDesign.edit, color: primaryColor, size: 20),
+                                      // ).onTap(() {
+                                      //   getMultipleFile(providerDocuments[index].documentId, updateId: providerDocuments[index].id.validate());
+                                      // }).visible(providerDocuments[index].isVerified == 0  && rolesAndPermissionStore.providerDocumentEdit),
+                                      // 6.width,
+                                  // Container(
+                                  //       padding: EdgeInsets.all(6),
+                                  //       decoration: boxDecorationWithRoundedCorners(
+                                  //         backgroundColor: Colors.white.withValues(alpha:0.4),
+                                  //       ),
+                                  //       child: Icon(Icons.delete_forever, color: Colors.red, size: 20),
+                                  //     ).onTap(() {
+                                  //       showConfirmDialogCustom(context, dialogType: DialogType.DELETE, positiveText: languages.lblDelete, negativeText: languages.lblNo, onAccept: (_) {
+                                  //         ifNotTester(context, () {
+                                  //           deleteDoc(providerDocuments[index].id);
+                                  //         });
+                                  //       });
+                                  //     }).visible(providerDocuments[index].isVerified == 0  && rolesAndPermissionStore.providerDocumentDelete),
                                       Icon(
                                         MaterialIcons.verified_user,
                                         color: Colors.green,

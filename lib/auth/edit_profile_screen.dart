@@ -139,7 +139,7 @@ class EditProfileScreenState extends State<EditProfileScreen> {
     serviceAddressId = appStore.serviceAddressId;
     designationCont.text = appStore.designation;
     selectedCountryPicker = Country(
-      phoneCode: appStore.userContactNumber.split("-").first.isEmpty ? "+91" : appStore.userContactNumber.split("-").first.toString(),
+      phoneCode: appStore.userContactNumber.split("-").first.isEmpty ? "+967" : appStore.userContactNumber.split("-").first.toString(),
       countryCode: "",
       e164Sc: 0,
       geographic: true,
@@ -633,28 +633,28 @@ class EditProfileScreenState extends State<EditProfileScreen> {
                           16.height,
                           Row(
                             children: [
-                              DropdownButtonFormField<CountryListResponse>(
-                                decoration: inputDecoration(context, hint: languages.selectCountry),
-                                isExpanded: true,
-                                menuMaxHeight: 300,
-                                value: selectedCountry,
-                                dropdownColor: context.cardColor,
-                                items: countryList.map((CountryListResponse e) {
-                                  return DropdownMenuItem<CountryListResponse>(
-                                    value: e,
-                                    child: Text(e.name!, style: primaryTextStyle(), maxLines: 1, overflow: TextOverflow.ellipsis),
-                                  );
-                                }).toList(),
-                                onChanged: (CountryListResponse? value) async {
-                                  countryId = value!.id!;
-                                  selectedCountry = value;
-                                  selectedState = null;
-                                  selectedCity = null;
-                                  setState(() {});
+                              // DropdownButtonFormField<CountryListResponse>(
+                              //   decoration: inputDecoration(context, hint: languages.selectCountry),
+                              //   isExpanded: true,
+                              //   menuMaxHeight: 300,
+                              //   value: selectedCountry,
+                              //   dropdownColor: context.cardColor,
+                              //   items: countryList.map((CountryListResponse e) {
+                              //     return DropdownMenuItem<CountryListResponse>(
+                              //       value: e,
+                              //       child: Text(e.name!, style: primaryTextStyle(), maxLines: 1, overflow: TextOverflow.ellipsis),
+                              //     );
+                              //   }).toList(),
+                              //   onChanged: (CountryListResponse? value) async {
+                              //     countryId = value!.id!;
+                              //     selectedCountry = value;
+                              //     selectedState = null;
+                              //     selectedCity = null;
+                              //     setState(() {});
                 
-                                  getStates(value.id!);
-                                },
-                              ).expand(),
+                              //     getStates(value.id!);
+                              //   },
+                              // ).expand(),
                               8.width.visible(stateList.isNotEmpty),
                               if (stateList.isNotEmpty)
                                 DropdownButtonFormField<StateListResponse>(
