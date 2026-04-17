@@ -480,7 +480,7 @@ class LanguageAr extends Languages {
   String get lblAddress => "العنوان";
 
   @override
-  String get lblType => "النوع";
+  String get lblType => "نوع الخدمة";
 
   @override
   String get lblHandymanType => 'نوع العامل الماهر';
@@ -788,7 +788,7 @@ class LanguageAr extends Languages {
   String get lblAssignToMyself => "تعيين لنفسي";
 
   @override
-  String get lblFree => "غير مدفوع الأجر";
+  String get lblFree => "خدمة استفسارية ";
 
   @override
   String get lblMyProvider => "مزود خدمة";
