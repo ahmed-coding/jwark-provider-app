@@ -66,16 +66,16 @@ class WalletHistoryScreenState extends State<WalletHistoryScreen> {
             physics: AlwaysScrollableScrollPhysics(),
             children: [
               16.height,
-              WalletCard(
-                availableBalance: availableBalance,
-                callback: (value) {
-                  if (value ?? false) {
-                    init();
-                    setState(() {});
-                  }
-                },
-              ),
-              20.height,
+              // WalletCard(
+              //   availableBalance: availableBalance,
+              //   callback: (value) {
+              //     if (value ?? false) {
+              //       init();
+              //       setState(() {});
+              //     }
+              //   },
+              // ),
+              // 20.height,
               Text(languages.lblWalletHistory, style: primaryTextStyle(size: 14, weight: FontWeight.bold)).paddingSymmetric(horizontal: 16),
               16.height,
               AnimatedListView(

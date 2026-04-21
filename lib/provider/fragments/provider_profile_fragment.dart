@@ -401,19 +401,19 @@ class ProviderProfileFragmentState extends State<ProviderProfileFragment> {
                     },
                   ),
                 if (rolesAndPermissionStore.bankList)
-                  SettingItemWidget(
-                    decoration: BoxDecoration(color: context.cardColor),
-                    leading: Image.asset(ic_card, height: 16, width: 16, color: appStore.isDarkMode ? white : appTextSecondaryColor),
-                    title: languages.lblBankDetails,
-                    titleTextStyle: boldTextStyle(size: 12),
-                    trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 18),
-                    highlightColor: Colors.transparent,
-                    splashColor: Colors.transparent,
-                    padding: EdgeInsets.only(right: 16, left: 16, top: 20),
-                    onTap: () {
-                      BankDetails().launch(context);
-                    },
-                  ),
+                  // SettingItemWidget(
+                  //   decoration: BoxDecoration(color: context.cardColor),
+                  //   leading: Image.asset(ic_card, height: 16, width: 16, color: appStore.isDarkMode ? white : appTextSecondaryColor),
+                  //   title: languages.lblBankDetails,
+                  //   titleTextStyle: boldTextStyle(size: 12),
+                  //   trailing: Icon(Icons.chevron_right, color: appStore.isDarkMode ? white : gray.withValues(alpha: 0.8), size: 18),
+                  //   highlightColor: Colors.transparent,
+                  //   splashColor: Colors.transparent,
+                  //   padding: EdgeInsets.only(right: 16, left: 16, top: 20),
+                  //   onTap: () {
+                  //     BankDetails().launch(context);
+                  //   },
+                  // ),
                 if (appStore.userType == USER_TYPE_PROVIDER && appConfigurationStore.isPromotionalBanner)
                   SettingItemWidget(
                     decoration: BoxDecoration(color: context.cardColor),
