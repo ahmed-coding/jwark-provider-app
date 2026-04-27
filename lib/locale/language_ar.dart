@@ -685,10 +685,10 @@ class LanguageAr extends Languages {
   String get lblSelectCommission => 'حدد العمولة';
 
   @override
-  String get lblIAgree => "محفظة";
+  String get lblIAgree => "أنا أوافق على";
 
   @override
-  String get lblTermsOfService => "حدد نوع المستخدم";
+  String get lblTermsOfService => "الشروط والاحكام";
 
   @override
   String get lblLoginAgain => "أنا أوافق على";
